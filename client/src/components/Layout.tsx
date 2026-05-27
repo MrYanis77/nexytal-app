@@ -60,14 +60,12 @@ export default function Layout({ children }: LayoutProps) {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 md:px-6 flex justify-between items-center">
-          {/* Logo (Linking Talents Inspired - Slate & Rose Accent) */}
+          {/* Logo (NEXYTAL - Slate & Rose Accent) */}
           <Link href="/">
             <div className="flex items-center space-x-3 cursor-pointer group">
               <div className="flex flex-col">
                 <span className="text-2xl font-black tracking-tight text-slate-900 flex items-center">
-                  LINKING<span className="text-[#c22d4a] ml-1.5 font-light">TALENTS</span>
-                  <span className="text-slate-400 font-normal mx-2">|</span>
-                  <span className="text-slate-500 text-lg font-bold tracking-widest">NEXYTAL</span>
+                  NEXY<span className="text-[#c22d4a]">TAL</span>
                 </span>
                 <span className="text-[9px] uppercase tracking-widest text-slate-400 font-bold text-left">
                   Cabinet de recrutement & conseil spécialisé
@@ -163,7 +161,7 @@ export default function Layout({ children }: LayoutProps) {
             <div className="space-y-4 text-left">
               <div className="flex flex-col">
                 <span className="text-xl font-black tracking-tight text-white">
-                  LINKING<span className="text-[#c22d4a] ml-1 font-light">TALENTS</span>
+                  NEXY<span className="text-[#c22d4a]">TAL</span>
                 </span>
                 <span className="text-[9px] uppercase tracking-widest text-slate-400 font-bold">
                   NEXYTAL Groupe National

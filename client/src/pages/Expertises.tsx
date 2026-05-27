@@ -197,12 +197,7 @@ export default function Expertises() {
                           className="w-full h-full object-cover object-center"
                         />
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/10 to-black/20"></div>
-                        <div className="absolute bottom-0 right-0 bg-white px-4 py-2.5 rounded-tl-2xl shadow-lg border-t border-l border-slate-100 flex items-center space-x-1.5">
-                          <IconComponent className="w-3.5 h-3.5 text-[#c22d4a]" />
-                          <span className="text-[9px] font-black text-slate-900 tracking-wider">
-                            {exp.logoText}
-                          </span>
-                        </div>
+{/* Angle Tab Logo removed */}
                       </div>
                     </div>
                   </div>
