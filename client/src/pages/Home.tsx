@@ -45,10 +45,11 @@ export default function Home() {
   };
 
   // 6 Pôles d'expertises structurés exactement selon le design de l'image de l'utilisateur :
-  // - Coins arrondis (rounded-3xl)
-  // - Asymétrie bicolore : dégradé coloré élégant à gauche (avec texte, badge d'année/type, logo)
-  // - Image réaliste de professionnel de profil à droite (qui s'intègre harmonieusement)
-  // - Design d'onglet d'angle en bas à droite pour le logo du pôle
+  // - Image de fond s'étendant sur TOUTE la carte
+  // - Overlay de couleur CLAIRE, lumineuse et vibrante par-dessus (pas sombre)
+  // - Dégradé asymétrique de gauche à droite
+  // - Bloc de texte et badge d'étude de rémunération à gauche
+  // - Visuel de professionnel à droite s'intégrant naturellement
   const expertises = [
     {
       id: "coaching",
@@ -56,12 +57,11 @@ export default function Home() {
       subtitle: "CONSEIL & IA",
       year: "2026",
       description: "Coaching de dirigeants, intégration de l'intelligence artificielle dans vos processus décisionnels et conduite du changement technologique.",
-      gradient: "from-[#8B307E] to-[#4A1E60]", // Style Violet / Fuchsia
-      textColor: "text-purple-100",
-      badgeBg: "bg-purple-900/40",
+      // Violet/Rose vibrant mais clair et lumineux (style 1ère carte)
+      overlayClass: "bg-gradient-to-r from-[#8B307E]/90 via-[#8B307E]/85 to-[#3b1c54]/75", 
+      badgeBg: "bg-white/15",
       image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=80",
-      icon: Brain,
-      logoText: "CoachingTalents"
+      icon: Brain
     },
     {
       id: "medical",
@@ -69,12 +69,11 @@ export default function Home() {
       subtitle: "SANTÉ & SECTEUR PUBLIC",
       year: "2026",
       description: "Conseil stratégique, audits organisationnels et recrutement spécialisé pour les cliniques, hôpitaux et professionnels de santé.",
-      gradient: "from-[#D97706] to-[#B45309]", // Style Orange / Ambre chaleureux
-      textColor: "text-amber-500",
-      badgeBg: "bg-amber-950/40",
+      // Orange/Ambre chaud, lumineux et vibrant (style 2ème carte)
+      overlayClass: "bg-gradient-to-r from-[#D97706]/90 via-[#D97706]/85 to-[#b45309]/75", 
+      badgeBg: "bg-white/15",
       image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=500&q=80",
-      icon: HeartPulse,
-      logoText: "MedicalTalents"
+      icon: HeartPulse
     },
     {
       id: "recrutement",
@@ -82,12 +81,11 @@ export default function Home() {
       subtitle: "EXECUTIVE SEARCH",
       year: "2026",
       description: "Cabinet de recrutement spécialisé par approche directe pour l'identification de cadres, experts techniques et dirigeants.",
-      gradient: "from-[#1E3A8A] to-[#172554]", // Style Bleu Nuit profond
-      textColor: "text-blue-100",
-      badgeBg: "bg-blue-950/40",
+      // Bleu électrique/indigo lumineux (style 3ème carte)
+      overlayClass: "bg-gradient-to-r from-[#1E40AF]/90 via-[#1E40AF]/85 to-[#1e1b4b]/75", 
+      badgeBg: "bg-white/15",
       image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=500&q=80",
-      icon: Users,
-      logoText: "ExecutiveTalents"
+      icon: Users
     },
     {
       id: "cyber",
@@ -95,12 +93,11 @@ export default function Home() {
       subtitle: "AUDIT & SÉCURITÉ",
       year: "2026",
       description: "Diagnostic de vulnérabilité, sécurisation des infrastructures cloud, conformité réglementaire (NIS 2) et gestion de crise cyber.",
-      gradient: "from-[#065F46] to-[#064E3B]", // Style Vert Émeraude / Forêt
-      textColor: "text-emerald-100",
-      badgeBg: "bg-emerald-950/40",
+      // Vert émeraude vibrant et lumineux (style 4ème carte)
+      overlayClass: "bg-gradient-to-r from-[#065F46]/90 via-[#065F46]/85 to-[#022c22]/75", 
+      badgeBg: "bg-white/15",
       image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=500&q=80",
-      icon: Shield,
-      logoText: "CyberTalents"
+      icon: Shield
     },
     {
       id: "fiscal",
@@ -108,12 +105,11 @@ export default function Home() {
       subtitle: "JURIDIQUE & CONFORMITÉ",
       year: "2026",
       description: "Accompagnement juridique, fiscal et de structuration d'entreprise pour sécuriser vos opérations et optimiser vos choix stratégiques.",
-      gradient: "from-[#312E81] to-[#1E1B4B]", // Style Indigo / Violet Foncé
-      textColor: "text-indigo-100",
-      badgeBg: "bg-indigo-950/40",
+      // Rouge corail/terre de sienne chaud et lumineux (style 7ème carte)
+      overlayClass: "bg-gradient-to-r from-[#B91C1C]/90 via-[#B91C1C]/85 to-[#7f1d1d]/75", 
+      badgeBg: "bg-white/15",
       image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=500&q=80",
-      icon: Scale,
-      logoText: "LegalTalents"
+      icon: Scale
     },
     {
       id: "rh",
@@ -121,12 +117,11 @@ export default function Home() {
       subtitle: "GPEC & CLIMAT SOCIAL",
       year: "2026",
       description: "Audit organisationnel, structuration de la marque employeur, gestion des emplois et compétences et qualité de vie au travail (RSE).",
-      gradient: "from-[#111827] to-[#030712]", // Style Gris Ardoise sombre / Charbon
-      textColor: "text-slate-100",
-      badgeBg: "bg-slate-900/40",
+      // Cyan/Bleu-vert marin frais et lumineux (style 5ème carte)
+      overlayClass: "bg-gradient-to-r from-[#0369A1]/90 via-[#0369A1]/85 to-[#0f172a]/75", 
+      badgeBg: "bg-white/15",
       image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=500&q=80",
-      icon: Briefcase,
-      logoText: "RHTalents"
+      icon: Briefcase
     }
   ];
 
@@ -233,14 +228,26 @@ export default function Home() {
               return (
                 <div
                   key={exp.id}
-                  className={`relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-row bg-gradient-to-r ${exp.gradient} h-[280px] md:h-[300px] text-left group`}
+                  className="relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-row h-[280px] md:h-[300px] text-left group"
                 >
-                  {/* Left Column: Content & Text (60% width) */}
-                  <div className="w-[58%] md:w-[62%] p-6 md:p-8 flex flex-col justify-between relative z-10">
+                  {/* Image de fond globale s'étendant sur TOUTE la carte */}
+                  <div className="absolute inset-0 z-0">
+                    <img
+                      src={exp.image}
+                      alt={exp.title}
+                      className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                    />
+                  </div>
+
+                  {/* Overlay de couleur CLAIRE, lumineuse et vibrante par-dessus (pas sombre) */}
+                  <div className={`absolute inset-0 z-10 ${exp.overlayClass} transition-opacity duration-300`}></div>
+
+                  {/* Left Column: Content & Text (60% width) - Positioned above background & overlay */}
+                  <div className="w-[58%] md:w-[62%] p-6 md:p-8 flex flex-col justify-between relative z-20">
                     <div className="space-y-3">
                       {/* Badge "ÉTUDE DE RÉMUNÉRATION / DOMAINE" style */}
-                      <div className={`rounded-xl p-3 w-fit ${exp.badgeBg} border border-white/5`}>
-                        <p className="text-[10px] font-black tracking-wider text-white uppercase opacity-90 leading-tight">
+                      <div className={`rounded-xl p-3 w-fit ${exp.badgeBg} border border-white/10 backdrop-blur-sm`}>
+                        <p className="text-[10px] font-black tracking-wider text-white uppercase opacity-95 leading-tight">
                           {exp.subtitle}
                         </p>
                         <p className="text-lg md:text-xl font-black text-white mt-1">
@@ -255,7 +262,7 @@ export default function Home() {
                     </div>
 
                     {/* Short description */}
-                    <p className="text-xs text-white/80 line-clamp-3 leading-relaxed font-medium">
+                    <p className="text-xs text-white/90 line-clamp-3 leading-relaxed font-semibold">
                       {exp.description}
                     </p>
 
@@ -270,17 +277,9 @@ export default function Home() {
                     </div>
                   </div>
 
-                  {/* Right Column: Profile Image (42% width) */}
-                  <div className="w-[42%] md:w-[38%] relative h-full shrink-0">
-                    <img
-                      src={exp.image}
-                      alt={exp.title}
-                      className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                    />
-                    {/* Radial shadow overlay to blend image into the gradient */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/10 to-black/20"></div>
-
-{/* Angle Tab Logo removed */}
+                  {/* Right Column: Visual area (42% width) - Keeps spacing to let professional visual show clearly */}
+                  <div className="w-[42%] md:w-[38%] relative h-full shrink-0 z-20 pointer-events-none">
+                    {/* Empty block to preserve right-side composition, image is already in the absolute background */}
                   </div>
                 </div>
               );
