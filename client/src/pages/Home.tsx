@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "wouter";
 import Layout from "../components/Layout";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Brain, HeartPulse, Shield, Scale, Users, ChevronLeft, Compass, Briefcase } from "lucide-react";
+import { ArrowRight, Brain, HeartPulse, Shield, Scale, Users, ChevronLeft, Compass, Briefcase, BookOpen, UserCheck, Award, GraduationCap } from "lucide-react";
 
 export default function Home() {
   // Carrousel Hero Images & Messages
@@ -44,84 +44,79 @@ export default function Home() {
     setCurrentSlide((prev) => (prev - 1 + heroSlides.length) % heroSlides.length);
   };
 
-  // 6 Pôles d'expertises structurés exactement selon le design de l'image de l'utilisateur :
-  // - Image de fond s'étendant sur TOUTE la carte
-  // - Overlay de couleur CLAIRE, lumineuse et vibrante par-dessus (pas sombre)
-  // - Dégradé asymétrique de gauche à droite
-  // - Bloc de texte et badge d'étude de rémunération à gauche
-  // - Visuel de professionnel à droite s'intégrant naturellement
+  // 6 Pôles d'expertises mis à jour selon pasted_content.txt avec des images claires et adaptées
   const expertises = [
     {
-      id: "coaching",
-      title: "NEXYTAL COACHING",
-      subtitle: "CONSEIL & IA",
+      id: "formations",
+      title: "NEXYTAL FORMATIONS",
+      subtitle: "FORMATION PROFESSIONNELLE",
       year: "2026",
-      description: "Coaching de dirigeants, intégration de l'intelligence artificielle dans vos processus décisionnels et conduite du changement technologique.",
-      // Violet/Rose vibrant mais clair et lumineux (style 1ère carte)
-      overlayClass: "bg-gradient-to-r from-[#8B307E]/90 via-[#8B307E]/85 to-[#3b1c54]/75", 
+      description: "Programmes de montée en compétences pour vos équipes : management, outils digitaux, posture commerciale et efficacité opérationnelle.",
+      overlayClass: "bg-gradient-to-r from-[#1E3A8A]/90 via-[#1E3A8A]/85 to-[#0c4a6e]/75",
       badgeBg: "bg-white/15",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=80",
-      icon: Brain
-    },
-    {
-      id: "medical",
-      title: "NEXYTAL MÉDICAL",
-      subtitle: "SANTÉ & SECTEUR PUBLIC",
-      year: "2026",
-      description: "Conseil stratégique, audits organisationnels et recrutement spécialisé pour les cliniques, hôpitaux et professionnels de santé.",
-      // Orange/Ambre chaud, lumineux et vibrant (style 2ème carte)
-      overlayClass: "bg-gradient-to-r from-[#D97706]/90 via-[#D97706]/85 to-[#b45309]/75", 
-      badgeBg: "bg-white/15",
-      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=500&q=80",
-      icon: HeartPulse
-    },
-    {
-      id: "recrutement",
-      title: "NEXYTAL RECRUTEMENT",
-      subtitle: "EXECUTIVE SEARCH",
-      year: "2026",
-      description: "Cabinet de recrutement spécialisé par approche directe pour l'identification de cadres, experts techniques et dirigeants.",
-      // Bleu électrique/indigo lumineux (style 3ème carte)
-      overlayClass: "bg-gradient-to-r from-[#1E40AF]/90 via-[#1E40AF]/85 to-[#1e1b4b]/75", 
-      badgeBg: "bg-white/15",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=500&q=80",
-      icon: Users
-    },
-    {
-      id: "cyber",
-      title: "NEXYTAL CYBER",
-      subtitle: "AUDIT & SÉCURITÉ",
-      year: "2026",
-      description: "Diagnostic de vulnérabilité, sécurisation des infrastructures cloud, conformité réglementaire (NIS 2) et gestion de crise cyber.",
-      // Vert émeraude vibrant et lumineux (style 4ème carte)
-      overlayClass: "bg-gradient-to-r from-[#065F46]/90 via-[#065F46]/85 to-[#022c22]/75", 
-      badgeBg: "bg-white/15",
-      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=500&q=80",
-      icon: Shield
-    },
-    {
-      id: "fiscal",
-      title: "NEXYTAL FISCAL",
-      subtitle: "JURIDIQUE & CONFORMITÉ",
-      year: "2026",
-      description: "Accompagnement juridique, fiscal et de structuration d'entreprise pour sécuriser vos opérations et optimiser vos choix stratégiques.",
-      // Rouge corail/terre de sienne chaud et lumineux (style 7ème carte)
-      overlayClass: "bg-gradient-to-r from-[#B91C1C]/90 via-[#B91C1C]/85 to-[#7f1d1d]/75", 
-      badgeBg: "bg-white/15",
-      image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=500&q=80",
-      icon: Scale
+      // Image 1 : Formation claire (salle de classe moderne / tableau)
+      image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=600&q=80",
+      icon: GraduationCap
     },
     {
       id: "rh",
-      title: "NEXYTAL CONSEIL RH",
-      subtitle: "GPEC & CLIMAT SOCIAL",
+      title: "NEXYTAL RH",
+      subtitle: "RESSOURCES HUMAINES",
       year: "2026",
-      description: "Audit organisationnel, structuration de la marque employeur, gestion des emplois et compétences et qualité de vie au travail (RSE).",
-      // Cyan/Bleu-vert marin frais et lumineux (style 5ème carte)
-      overlayClass: "bg-gradient-to-r from-[#0369A1]/90 via-[#0369A1]/85 to-[#0f172a]/75", 
+      description: "Structuration RH, marque employeur, pilotage des talents et accompagnement des transformations humaines.",
+      overlayClass: "bg-gradient-to-r from-[#0F766E]/90 via-[#0F766E]/85 to-[#134e4a]/75",
       badgeBg: "bg-white/15",
-      image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=500&q=80",
+      // Image 2 : Ressources humaines (collaboration d'équipe souriante)
+      image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80",
       icon: Briefcase
+    },
+    {
+      id: "coaching",
+      title: "NEXYTAL COACHING",
+      subtitle: "LEADERSHIP & PERFORMANCE",
+      year: "2026",
+      description: "Coaching individuel et collectif pour dirigeants, managers et équipes afin d'accélérer la performance durable.",
+      overlayClass: "bg-gradient-to-r from-[#8B307E]/90 via-[#8B307E]/85 to-[#3b1c54]/75",
+      badgeBg: "bg-white/15",
+      // Image 3 : Coaching emploi (entretien individuel constructif / bienveillant)
+      image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80",
+      icon: Brain
+    },
+    {
+      id: "medicale",
+      title: "NEXYTAL MÉDICALE",
+      subtitle: "SANTÉ & MÉDICAL",
+      year: "2026",
+      description: "Accompagnement des structures de santé : organisation, recrutement spécialisé et amélioration continue des parcours.",
+      overlayClass: "bg-gradient-to-r from-[#D97706]/90 via-[#D97706]/85 to-[#b45309]/75",
+      badgeBg: "bg-white/15",
+      // Image 4 : Médecine / santé (stéthoscope / médecin bienveillant)
+      image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=600&q=80",
+      icon: HeartPulse
+    },
+    {
+      id: "trainer",
+      title: "NEXYTAL TRAINER",
+      subtitle: "TRAINING & DELIVERY",
+      year: "2026",
+      description: "Conception et animation de parcours de formation sur-mesure, présentiel et distanciel, avec suivi de progression.",
+      overlayClass: "bg-gradient-to-r from-[#B45309]/90 via-[#B45309]/85 to-[#78350f]/75",
+      badgeBg: "bg-white/15",
+      // Image 5 : Trainer / Formateur (animation d'atelier / workshop)
+      image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=600&q=80",
+      icon: Award
+    },
+    {
+      id: "recrutements",
+      title: "NEXYTAL RECRUTEMENTS",
+      subtitle: "TALENT ACQUISITION",
+      year: "2026",
+      description: "Sourcing ciblé, évaluation approfondie et recrutement de profils clés pour renforcer vos équipes durablement.",
+      overlayClass: "bg-gradient-to-r from-[#1E40AF]/90 via-[#1E40AF]/85 to-[#1e1b4b]/75",
+      badgeBg: "bg-white/15",
+      // Image 6 : Recrutement (poignée de main chaleureuse / embauche)
+      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80",
+      icon: UserCheck
     }
   ];
 
@@ -211,20 +206,19 @@ export default function Home() {
           {/* Header */}
           <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
             <span className="text-xs font-extrabold uppercase tracking-widest text-[#c22d4a] bg-rose-50 border border-rose-100 px-3 py-1.5 rounded-full">
-              Domaines d'Expertise
+              Nos pôles d'activités
             </span>
             <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">
-              Nos pôles d'accompagnement spécialisés
+              Domaines d'Expertise
             </h2>
             <p className="text-base text-slate-500 font-medium">
-              Chaque entité de NEXYTAL Groupe apporte une expertise pointue pour répondre à l'ensemble des exigences de votre organisation.
+              Découvrez l'ensemble de nos pôles d'accompagnement et de recrutement spécialisés, conçus pour sécuriser, optimiser et propulser votre entreprise.
             </p>
           </div>
 
           {/* Grid of 6 Containers matching the user's image exactly */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             {expertises.map((exp) => {
-              const IconComponent = exp.icon;
               return (
                 <div
                   key={exp.id}
@@ -295,15 +289,15 @@ export default function Home() {
             Contactez nos cabinets
           </span>
           <h2 className="text-3xl md:text-4xl font-black tracking-tight text-slate-900">
-            Un projet de recrutement ou d'accompagnement ?
+            Une synergie d'expertises unique
           </h2>
           <p className="text-slate-500 max-w-2xl mx-auto text-sm md:text-base font-medium leading-relaxed">
-            Nos consultants spécialisés vous recontactent sous 24h pour étudier vos besoins et vous proposer une stratégie sur-mesure.
+            Parce que vos enjeux sont interconnectés, nos cabinets collaborent au quotidien. Un audit de cybersécurité s'accompagnera de la rédaction de vos chartes informatiques de conformité, tandis qu'un recrutement stratégique bénéficiera de l'audit de votre climat social.
           </p>
           <div className="pt-4">
             <Link href="/contact">
               <Button className="bg-[#c22d4a] hover:bg-[#a1233c] text-white font-black px-8 py-6 rounded-md shadow-md shadow-rose-500/10 text-base flex items-center space-x-2 mx-auto group">
-                <span>Parler à un consultant</span>
+                <span>Parler à un conseiller</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>

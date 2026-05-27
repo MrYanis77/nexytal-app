@@ -13,7 +13,7 @@ export default function Contact() {
     email: "",
     phone: "",
     company: "",
-    pole: "Recrutement",
+    pole: "Recrutements",
     message: ""
   });
 
@@ -117,12 +117,12 @@ export default function Contact() {
                         onChange={(e) => setFormData({ ...formData, pole: e.target.value })}
                         className="w-full bg-white border border-slate-200 focus:bg-white rounded-md text-sm font-medium p-3 focus:outline-none focus:ring-2 focus:ring-ring"
                       >
-                        <option value="Coaching">NEXYTAL Coaching (Accompagnement & IA)</option>
-                        <option value="Médical">NEXYTAL Médical (Santé & Secteur Public)</option>
-                        <option value="Recrutement">NEXYTAL Recrutement (Executive Search)</option>
-                        <option value="Cybersécurité">NEXYTAL Cyber (Audit & Sécurité)</option>
-                        <option value="Fiscal">NEXYTAL Fiscal (Juridique & Conformité)</option>
-                        <option value="RH">NEXYTAL Conseil RH (GPEC & Climat Social)</option>
+                        <option value="Formations">NEXYTAL Formations (Formation Professionnelle)</option>
+                        <option value="RH">NEXYTAL RH (Ressources Humaines)</option>
+                        <option value="Coaching">NEXYTAL Coaching (Leadership & Performance)</option>
+                        <option value="Médicale">NEXYTAL Médicale (Santé & Médical)</option>
+                        <option value="Trainer">NEXYTAL Trainer (Training & Delivery)</option>
+                        <option value="Recrutements">NEXYTAL Recrutements (Talent Acquisition)</option>
                       </select>
                     </div>
 
@@ -162,7 +162,7 @@ export default function Contact() {
                     <Button
                       onClick={() => {
                         setSubmitted(false);
-                        setFormData({ name: "", email: "", phone: "", company: "", pole: "Recrutement", message: "" });
+                        setFormData({ name: "", email: "", phone: "", company: "", pole: "Recrutements", message: "" });
                       }}
                       className="bg-slate-900 hover:bg-slate-800 text-white font-bold"
                     >
