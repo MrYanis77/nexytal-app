@@ -10,22 +10,24 @@ import {
   HeartPulse,
   Scale,
   Users,
-  BookOpen,
-  Award,
-  CheckCircle2
+  CheckCircle2,
+  Briefcase
 } from "lucide-react";
 
 export default function Expertises() {
   const expertises = [
     {
       id: "coaching",
-      title: "NEXYTAL Coaching",
-      subtitle: "Accompagnement & IA",
+      title: "NEXYTAL COACHING",
+      subtitle: "CONSEIL & IA",
+      year: "2026",
       description: "Coaching de dirigeants, intégration de l'intelligence artificielle dans vos processus décisionnels et conduite du changement technologique.",
-      icon: Brain,
-      color: "from-purple-600 to-indigo-700",
+      gradient: "from-[#8B307E] to-[#4A1E60]",
       textColor: "text-purple-600",
-      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663455782975/9HMyiv9EyN2y8UvBTTkJTq/nexytal_coaching-Xuxi4vHHRQ2kjxhffsggcY.webp",
+      badgeBg: "bg-purple-900/40",
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=80",
+      icon: Brain,
+      logoText: "CoachingTalents",
       features: [
         "Coaching individuel de dirigeants et managers",
         "Ateliers d'intégration de l'IA générative en entreprise",
@@ -35,29 +37,35 @@ export default function Expertises() {
     },
     {
       id: "medical",
-      title: "NEXYTAL Médical",
-      subtitle: "Santé & Secteur Public",
-      description: "Conseil stratégique et formations spécialisées pour les professionnels de santé, les cliniques, les hôpitaux et la gestion des équipes médicales.",
+      title: "NEXYTAL MÉDICAL",
+      subtitle: "SANTÉ & SECTEUR PUBLIC",
+      year: "2026",
+      description: "Conseil stratégique, audits organisationnels et recrutement spécialisé pour les cliniques, hôpitaux et professionnels de santé.",
+      gradient: "from-[#D97706] to-[#B45309]",
+      textColor: "text-amber-600",
+      badgeBg: "bg-amber-950/40",
+      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=500&q=80",
       icon: HeartPulse,
-      color: "from-rose-500 to-red-600",
-      textColor: "text-rose-600",
-      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663455782975/9HMyiv9EyN2y8UvBTTkJTq/nexytal_medical-ZxKYz7cFdnHFi88Xrqw4rZ.webp",
+      logoText: "MedicalTalents",
       features: [
         "Audit organisationnel des établissements de santé",
-        "Formations certifiantes pour le personnel soignant",
+        "Conseil en structuration et gestion d'équipes de soins",
         "Accompagnement réglementaire et conformité médicale",
         "Recrutement de profils médicaux et paramédicaux"
       ]
     },
     {
       id: "recrutement",
-      title: "NEXYTAL Recrutement",
-      subtitle: "Talents & Executive Search",
-      description: "Cabinet de recrutement spécialisé par approche directe pour l'identification de cadres, experts techniques et dirigeants à forte valeur ajoutée.",
+      title: "NEXYTAL RECRUTEMENT",
+      subtitle: "EXECUTIVE SEARCH",
+      year: "2026",
+      description: "Cabinet de recrutement spécialisé par approche directe pour l'identification de cadres, experts techniques et dirigeants.",
+      gradient: "from-[#1E3A8A] to-[#172554]",
+      textColor: "text-blue-600",
+      badgeBg: "bg-blue-950/40",
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=500&q=80",
       icon: Users,
-      color: "from-amber-500 to-orange-600",
-      textColor: "text-amber-600",
-      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600&q=80",
+      logoText: "ExecutiveTalents",
       features: [
         "Chasse de têtes et approche directe (Executive Search)",
         "Évaluation approfondie des compétences (Assessment Centers)",
@@ -66,46 +74,17 @@ export default function Expertises() {
       ]
     },
     {
-      id: "trainers",
-      title: "NEXYTAL Trainers",
-      subtitle: "Organisme de Formation",
-      description: "Formations professionnelles certifiantes et diplômantes en management, compétences numériques, transition écologique et efficacité commerciale.",
-      icon: BookOpen,
-      color: "from-blue-600 to-cyan-600",
-      textColor: "text-blue-600",
-      image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=600&q=80",
-      features: [
-        "Formations éligibles CPF et certifiées Qualiopi",
-        "Programmes sur-mesure en présentiel ou e-learning",
-        "Ingénierie pédagogique et plans de développement des compétences",
-        "Accompagnement administratif aux demandes de financement"
-      ]
-    },
-    {
-      id: "rh",
-      title: "NEXYTAL RH",
-      subtitle: "Conseil & Accompagnement",
-      description: "Audit organisationnel, structuration de la marque employeur, gestion prévisionnelle des emplois et compétences (GPEC) et politique RSE.",
-      icon: CheckCircle2,
-      color: "from-emerald-600 to-teal-700",
-      textColor: "text-emerald-600",
-      image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=600&q=80",
-      features: [
-        "Mise en place d'accords d'entreprise et conformité CSE",
-        "Gestion Prévisionnelle des Emplois et des Compétences (GPEC)",
-        "Audits de climat social et médiation professionnelle",
-        "Déploiement de politiques RSE et de qualité de vie au travail"
-      ]
-    },
-    {
       id: "cyber",
-      title: "NEXYTAL Cybersécurité",
-      subtitle: "Audit & Résilience",
-      description: "Diagnostic de vulnérabilité, sécurisation des infrastructures cloud, formation de sensibilisation des collaborateurs et gestion de crise cyber.",
+      title: "NEXYTAL CYBER",
+      subtitle: "AUDIT & SÉCURITÉ",
+      year: "2026",
+      description: "Diagnostic de vulnérabilité, sécurisation des infrastructures cloud, conformité réglementaire (NIS 2) et gestion de crise cyber.",
+      gradient: "from-[#065F46] to-[#064E3B]",
+      textColor: "text-emerald-600",
+      badgeBg: "bg-emerald-950/40",
+      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=500&q=80",
       icon: Shield,
-      color: "from-slate-700 to-slate-900",
-      textColor: "text-slate-800",
-      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663455782975/9HMyiv9EyN2y8UvBTTkJTq/nexytal_cybersecurity-TBbZP2gHBp3hiXMxYVFQe8.webp",
+      logoText: "CyberTalents",
       features: [
         "Audits de sécurité et tests d'intrusion (Pentests)",
         "Sensibilisation et formation des collaborateurs contre le phishing",
@@ -115,115 +94,161 @@ export default function Expertises() {
     },
     {
       id: "fiscal",
-      title: "NEXYTAL Fiscal & Juridique",
-      subtitle: "Conformité & Conseil d'Affaires",
+      title: "NEXYTAL FISCAL",
+      subtitle: "JURIDIQUE & CONFORMITÉ",
+      year: "2026",
       description: "Accompagnement juridique, fiscal et de structuration d'entreprise pour sécuriser vos opérations et optimiser vos choix stratégiques.",
-      icon: Scale,
-      color: "from-indigo-600 to-violet-700",
+      gradient: "from-[#312E81] to-[#1E1B4B]",
       textColor: "text-indigo-600",
-      image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=600&q=80",
+      badgeBg: "bg-indigo-950/40",
+      image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=500&q=80",
+      icon: Scale,
+      logoText: "LegalTalents",
       features: [
         "Audit fiscal et optimisation des structures sociétaires",
         "Secrétariat juridique annuel et rédaction de contrats commerciaux",
         "Accompagnement lors de fusions, acquisitions ou cessions",
         "Gestion fiscale et sociale pour dirigeants d'entreprises"
       ]
+    },
+    {
+      id: "rh",
+      title: "NEXYTAL CONSEIL RH",
+      subtitle: "GPEC & CLIMAT SOCIAL",
+      year: "2026",
+      description: "Audit organisationnel, structuration de la marque employeur, gestion des emplois et compétences et qualité de vie au travail (RSE).",
+      gradient: "from-[#111827] to-[#030712]",
+      textColor: "text-slate-800",
+      badgeBg: "bg-slate-900/40",
+      image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=500&q=80",
+      icon: Briefcase,
+      logoText: "RHTalents",
+      features: [
+        "Mise en place d'accords d'entreprise et conformité CSE",
+        "Gestion Prévisionnelle des Emplois et des Compétences (GPEC)",
+        "Audits de climat social et médiation professionnelle",
+        "Déploiement de politiques RSE et de qualité de vie au travail"
+      ]
     }
   ];
 
   return (
     <Layout>
-      {/* Page Header (ALT RH Inspired, Dark Blue Banner) */}
-      <section className="bg-[#0B192C] text-white py-16 md:py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_120%,rgba(241,122,40,0.1),transparent_40%)] pointer-events-none"></div>
-        <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10 text-left">
+      {/* Page Header - Pure White, Minimal */}
+      <section className="bg-slate-50 border-b border-slate-100 py-16 md:py-20 relative overflow-hidden text-left">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
           <div className="space-y-4 max-w-3xl">
-            <div className="inline-flex items-center space-x-2 bg-slate-800/80 border border-slate-700 px-3.5 py-1.5 rounded-full text-xs font-bold text-slate-300">
-              <span>Expertises</span>
-            </div>
-            <h1 className="text-3xl md:text-5xl font-black tracking-tight leading-tight">
-              Nos Domaines d'Expertise
+            <span className="text-xs font-extrabold uppercase tracking-widest text-[#c22d4a] bg-rose-50 border border-rose-100 px-3 py-1.5 rounded-full">
+              Nos pôles d'activités
+            </span>
+            <h1 className="text-3xl md:text-5xl font-black tracking-tight leading-tight text-slate-900">
+              Domaines d'Expertise
             </h1>
-            <p className="text-base md:text-lg text-slate-300 leading-relaxed">
-              Découvrez la richesse et la technicité de nos différents pôles d'activités, conçus pour répondre à l'ensemble des besoins de votre organisation.
+            <p className="text-base md:text-lg text-slate-500 font-medium leading-relaxed">
+              Découvrez l'ensemble de nos pôles d'accompagnement et de recrutement spécialisés, conçus pour sécuriser, optimiser et propulser votre entreprise.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Grid Section (Same Presentation as Home, but with detailed features list) */}
-      <section className="py-20 md:py-28 bg-slate-50">
+      {/* Grid Section - Same Layout as Home (Bicolore Asymétrique) but with detailed bullet features inside a dropdown or simple layout */}
+      <section className="py-20 md:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 gap-16">
             {expertises.map((exp) => {
               const IconComponent = exp.icon;
               return (
-                <Card key={exp.id} className="overflow-hidden border-none shadow-md hover:shadow-xl transition-all duration-300 bg-white flex flex-col group text-left">
-                  <div className="relative aspect-[16/8] overflow-hidden">
-                    <img
-                      src={exp.image}
-                      alt={exp.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-900/10 to-transparent"></div>
-                    <div className="absolute bottom-4 left-4 flex items-center space-x-2">
-                      <div className={`p-2.5 rounded-xl bg-gradient-to-tr ${exp.color} text-white shadow-md`}>
-                        <IconComponent className="w-5 h-5" />
+                <div key={exp.id} className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                  {/* Left Column: The exact card from the image (lg:col-span-6) */}
+                  <div className="lg:col-span-6">
+                    <div
+                      className={`relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-row bg-gradient-to-r ${exp.gradient} h-[280px] md:h-[300px] text-left group w-full`}
+                    >
+                      {/* Left Column inside card */}
+                      <div className="w-[58%] md:w-[62%] p-6 md:p-8 flex flex-col justify-between relative z-10">
+                        <div className="space-y-3">
+                          <div className={`rounded-xl p-3 w-fit ${exp.badgeBg} border border-white/5`}>
+                            <p className="text-[10px] font-black tracking-wider text-white uppercase opacity-90 leading-tight">
+                              {exp.subtitle}
+                            </p>
+                            <p className="text-lg md:text-xl font-black text-white mt-1">
+                              {exp.year}
+                            </p>
+                          </div>
+                          <h3 className="text-lg md:text-xl font-black text-white leading-tight tracking-tight">
+                            {exp.title}
+                          </h3>
+                        </div>
+                        <p className="text-xs text-white/80 line-clamp-3 leading-relaxed font-medium">
+                          {exp.description}
+                        </p>
+                        <div className="pt-2">
+                          <span className="text-xs font-extrabold text-white/90">
+                            Pôle actif
+                          </span>
+                        </div>
                       </div>
-                      <span className="text-xs font-bold text-white uppercase tracking-widest bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded">
-                        {exp.subtitle}
-                      </span>
+
+                      {/* Right Column inside card */}
+                      <div className="w-[42%] md:w-[38%] relative h-full shrink-0">
+                        <img
+                          src={exp.image}
+                          alt={exp.title}
+                          className="w-full h-full object-cover object-center"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/10 to-black/20"></div>
+                        <div className="absolute bottom-0 right-0 bg-white px-4 py-2.5 rounded-tl-2xl shadow-lg border-t border-l border-slate-100 flex items-center space-x-1.5">
+                          <IconComponent className="w-3.5 h-3.5 text-[#c22d4a]" />
+                          <span className="text-[9px] font-black text-slate-900 tracking-wider">
+                            {exp.logoText}
+                          </span>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <CardContent className="p-8 space-y-6 flex-grow flex flex-col justify-between">
-                    <div className="space-y-4">
-                      <h3 className="text-2xl font-black text-slate-900 group-hover:text-[#F17A28] transition-colors duration-200">
-                        {exp.title}
-                      </h3>
-                      <p className="text-sm text-slate-600 leading-relaxed">
-                        {exp.description}
-                      </p>
-                      
-                      {/* Features list (Specific to detailed page) */}
-                      <div className="pt-4 border-t border-slate-100 space-y-2.5">
-                        <p className="text-xs font-bold uppercase tracking-wider text-slate-400">Prestations phares :</p>
-                        <ul className="space-y-2 text-sm text-slate-700">
-                          {exp.features.map((feat, i) => (
-                            <li key={i} className="flex items-start space-x-2">
-                              <CheckCircle2 className={`w-4 h-4 shrink-0 mt-0.5 ${exp.textColor}`} />
-                              <span>{feat}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                    <div className="pt-6">
+
+                  {/* Right Column: Bullet Points & Contact Action (lg:col-span-6) */}
+                  <div className="lg:col-span-6 text-left space-y-6 lg:pl-6">
+                    <h3 className="text-2xl font-black text-slate-900">
+                      Prestations & Accompagnement
+                    </h3>
+                    <p className="text-sm text-slate-500 font-medium leading-relaxed">
+                      Nos consultants interviennent de manière agile et ciblée pour répondre à vos problématiques de croissance, de sécurité ou de recrutement :
+                    </p>
+                    <ul className="space-y-3">
+                      {exp.features.map((feat, i) => (
+                        <li key={i} className="flex items-start space-x-3 text-sm text-slate-700 font-medium">
+                          <CheckCircle2 className={`w-5 h-5 shrink-0 mt-0.5 ${exp.textColor}`} />
+                          <span>{feat}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <div className="pt-4">
                       <Link href="/contact">
-                        <Button className="bg-[#F17A28] hover:bg-[#d66218] text-white font-bold rounded-md flex items-center space-x-2 group">
-                          <span>Solliciter ce pôle</span>
+                        <Button className="bg-[#c22d4a] hover:bg-[#a1233c] text-white font-bold rounded-md flex items-center space-x-2 group">
+                          <span>Solliciter ce pôle d'expertise</span>
                           <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                         </Button>
                       </Link>
                     </div>
-                  </CardContent>
-                </Card>
+                  </div>
+                </div>
               );
             })}
           </div>
         </div>
       </section>
 
-      {/* Quality commitment */}
-      <section className="bg-[#0B192C] text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 text-center space-y-6">
-          <Award className="w-12 h-12 text-[#F17A28] mx-auto" />
-          <h2 className="text-2xl md:text-3xl font-black tracking-tight">Une synergie d'expertises unique</h2>
-          <p className="text-slate-300 max-w-3xl mx-auto leading-relaxed text-sm md:text-base">
-            Parce que vos enjeux sont interconnectés, nos experts collaborent au quotidien. Un audit de cybersécurité peut déboucher sur un plan de formation de vos équipes (NEXYTAL Trainers), tandis qu'un projet d'intégration d'IA s'accompagnera d'une validation de conformité juridique (NEXYTAL Fiscal & Juridique).
+      {/* Synergie Section */}
+      <section className="bg-slate-50 border-t border-slate-100 py-16">
+        <div className="max-w-5xl mx-auto px-4 md:px-6 text-center space-y-6">
+          <h2 className="text-2xl md:text-3xl font-black tracking-tight text-slate-900">Une synergie d'expertises unique</h2>
+          <p className="text-slate-500 max-w-3xl mx-auto leading-relaxed text-sm md:text-base font-medium">
+            Parce que vos enjeux sont interconnectés, nos cabinets collaborent au quotidien. Un audit de cybersécurité (NEXYTAL Cyber) s'accompagnera de la rédaction de vos chartes informatiques de conformité (NEXYTAL Fiscal), tandis qu'un recrutement stratégique (NEXYTAL Recrutement) bénéficiera de l'audit de votre climat social (NEXYTAL Conseil RH).
           </p>
           <div className="pt-4">
             <Link href="/contact">
-              <Button className="bg-[#F17A28] hover:bg-[#d66218] text-white font-bold px-8 py-6 rounded-md shadow-lg">
+              <Button className="bg-[#c22d4a] hover:bg-[#a1233c] text-white font-black px-8 py-6 rounded-md shadow-lg">
                 Parler à un conseiller
               </Button>
             </Link>

@@ -1,355 +1,319 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "wouter";
 import Layout from "../components/Layout";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import {
-  ArrowRight,
-  Shield,
-  Brain,
-  HeartPulse,
-  Scale,
-  Users,
-  BookOpen,
-  Award,
-  TrendingUp,
-  Download,
-  CheckCircle2,
-  FileText
-} from "lucide-react";
+import { ArrowRight, Brain, HeartPulse, Shield, Scale, Users, ChevronLeft, Compass, Briefcase } from "lucide-react";
 
 export default function Home() {
-  const expertises = [
+  // Carrousel Hero Images & Messages
+  const heroSlides = [
     {
-      id: "coaching",
-      title: "NEXYTAL Coaching",
-      subtitle: "Accompagnement & IA",
-      description: "Coaching de dirigeants, intégration de l'intelligence artificielle dans vos processus décisionnels et conduite du changement technologique.",
-      icon: Brain,
-      color: "from-purple-600 to-indigo-700",
-      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663455782975/9HMyiv9EyN2y8UvBTTkJTq/nexytal_coaching-Xuxi4vHHRQ2kjxhffsggcY.webp"
+      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663455782975/9HMyiv9EyN2y8UvBTTkJTq/nexytal_hero_bg-eqf2ssCfxPWceerTL2UKiv.webp",
+      badge: "CONSEIL & RECRUTEMENT",
+      title: "Développez vos expertises sectorielles",
+      description: "Le partenaire stratégique national pour l'accompagnement, la cybersécurité, l'IA, la fiscalité et le recrutement de vos futurs talents."
     },
     {
-      id: "medical",
-      title: "NEXYTAL Médical",
-      subtitle: "Santé & Secteur Public",
-      description: "Conseil stratégique et formations spécialisées pour les professionnels de santé, les cliniques, les hôpitaux et la gestion des équipes médicales.",
-      icon: HeartPulse,
-      color: "from-rose-500 to-red-600",
-      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663455782975/9HMyiv9EyN2y8UvBTTkJTq/nexytal_medical-ZxKYz7cFdnHFi88Xrqw4rZ.webp"
+      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663455782975/9HMyiv9EyN2y8UvBTTkJTq/nexytal_coaching-Xuxi4vHHRQ2kjxhffsggcY.webp",
+      badge: "INTELLIGENCE ARTIFICIELLE",
+      title: "Accompagner la transition technologique",
+      description: "Coaching de dirigeants et intégration de l'intelligence artificielle générative au cœur de vos processus opérationnels."
     },
     {
-      id: "recrutement",
-      title: "NEXYTAL Recrutement",
-      subtitle: "Talents & Executive Search",
-      description: "Cabinet de recrutement spécialisé par approche directe pour l'identification de cadres, experts techniques et dirigeants à forte valeur ajoutée.",
-      icon: Users,
-      color: "from-amber-500 to-orange-600",
-      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600&q=80"
-    },
-    {
-      id: "trainers",
-      title: "NEXYTAL Trainers",
-      subtitle: "Organisme de Formation",
-      description: "Formations professionnelles certifiantes et diplômantes en management, compétences numériques, transition écologique et efficacité commerciale.",
-      icon: BookOpen,
-      color: "from-blue-600 to-cyan-600",
-      image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=600&q=80"
-    },
-    {
-      id: "rh",
-      title: "NEXYTAL RH",
-      subtitle: "Conseil & Accompagnement",
-      description: "Audit organisationnel, structuration de la marque employeur, gestion prévisionnelle des emplois et compétences (GPEC) et politique RSE.",
-      icon: CheckCircle2,
-      color: "from-emerald-600 to-teal-700",
-      image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=600&q=80"
-    },
-    {
-      id: "cyber",
-      title: "NEXYTAL Cybersécurité",
-      subtitle: "Audit & Résilience",
-      description: "Diagnostic de vulnérabilité, sécurisation des infrastructures cloud, formation de sensibilisation des collaborateurs et gestion de crise cyber.",
-      icon: Shield,
-      color: "from-slate-700 to-slate-900",
-      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663455782975/9HMyiv9EyN2y8UvBTTkJTq/nexytal_cybersecurity-TBbZP2gHBp3hiXMxYVFQe8.webp"
+      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663455782975/9HMyiv9EyN2y8UvBTTkJTq/nexytal_cybersecurity-TBbZP2gHBp3hiXMxYVFQe8.webp",
+      badge: "RÉSILIENCE NUMÉRIQUE",
+      title: "Sécuriser vos infrastructures cloud",
+      description: "Audits de sécurité, tests d'intrusion et formation de sensibilisation de vos collaborateurs face aux cybermenaces."
     }
   ];
 
-  const featuredStudies = [
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+    }, 6000);
+    return () => clearInterval(timer);
+  }, [heroSlides.length]);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + heroSlides.length) % heroSlides.length);
+  };
+
+  // 6 Pôles d'expertises structurés exactement selon le design de l'image de l'utilisateur :
+  // - Coins arrondis (rounded-3xl)
+  // - Asymétrie bicolore : dégradé coloré élégant à gauche (avec texte, badge d'année/type, logo)
+  // - Image réaliste de professionnel de profil à droite (qui s'intègre harmonieusement)
+  // - Design d'onglet d'angle en bas à droite pour le logo du pôle
+  const expertises = [
     {
-      title: "Étude de Rémunération Nationale 2026",
-      category: "Fonctions Support & Management",
-      description: "Découvrez notre analyse complète des grilles salariales en France pour l'année 2026, incluant les tendances du recrutement post-IA.",
-      color: "border-l-4 border-purple-500",
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=500&q=80"
+      id: "coaching",
+      title: "NEXYTAL COACHING",
+      subtitle: "CONSEIL & IA",
+      year: "2026",
+      description: "Coaching de dirigeants, intégration de l'intelligence artificielle dans vos processus décisionnels et conduite du changement technologique.",
+      gradient: "from-[#8B307E] to-[#4A1E60]", // Style Violet / Fuchsia
+      textColor: "text-purple-100",
+      badgeBg: "bg-purple-900/40",
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=80",
+      icon: Brain,
+      logoText: "CoachingTalents"
     },
     {
-      title: "Baromètre de l'Emploi Médical & Santé",
-      category: "Secteur Médical",
-      description: "Analyse approfondie des besoins en recrutement, des pénuries de talents et des nouvelles exigences de formation pour les soignants.",
-      color: "border-l-4 border-rose-500",
-      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=500&q=80"
+      id: "medical",
+      title: "NEXYTAL MÉDICAL",
+      subtitle: "SANTÉ & SECTEUR PUBLIC",
+      year: "2026",
+      description: "Conseil stratégique, audits organisationnels et recrutement spécialisé pour les cliniques, hôpitaux et professionnels de santé.",
+      gradient: "from-[#D97706] to-[#B45309]", // Style Orange / Ambre chaleureux
+      textColor: "text-amber-500",
+      badgeBg: "bg-amber-950/40",
+      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=500&q=80",
+      icon: HeartPulse,
+      logoText: "MedicalTalents"
     },
     {
-      title: "Rapport Cybersécurité & PME 2026",
-      category: "Technologie & Risques",
-      description: "Un état des lieux exhaustif des menaces actuelles, des obligations réglementaires et des solutions de formation pour sécuriser votre entreprise.",
-      color: "border-l-4 border-slate-700",
-      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=500&q=80"
+      id: "recrutement",
+      title: "NEXYTAL RECRUTEMENT",
+      subtitle: "EXECUTIVE SEARCH",
+      year: "2026",
+      description: "Cabinet de recrutement spécialisé par approche directe pour l'identification de cadres, experts techniques et dirigeants.",
+      gradient: "from-[#1E3A8A] to-[#172554]", // Style Bleu Nuit profond
+      textColor: "text-blue-100",
+      badgeBg: "bg-blue-950/40",
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=500&q=80",
+      icon: Users,
+      logoText: "ExecutiveTalents"
+    },
+    {
+      id: "cyber",
+      title: "NEXYTAL CYBER",
+      subtitle: "AUDIT & SÉCURITÉ",
+      year: "2026",
+      description: "Diagnostic de vulnérabilité, sécurisation des infrastructures cloud, conformité réglementaire (NIS 2) et gestion de crise cyber.",
+      gradient: "from-[#065F46] to-[#064E3B]", // Style Vert Émeraude / Forêt
+      textColor: "text-emerald-100",
+      badgeBg: "bg-emerald-950/40",
+      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=500&q=80",
+      icon: Shield,
+      logoText: "CyberTalents"
+    },
+    {
+      id: "fiscal",
+      title: "NEXYTAL FISCAL",
+      subtitle: "JURIDIQUE & CONFORMITÉ",
+      year: "2026",
+      description: "Accompagnement juridique, fiscal et de structuration d'entreprise pour sécuriser vos opérations et optimiser vos choix stratégiques.",
+      gradient: "from-[#312E81] to-[#1E1B4B]", // Style Indigo / Violet Foncé
+      textColor: "text-indigo-100",
+      badgeBg: "bg-indigo-950/40",
+      image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=500&q=80",
+      icon: Scale,
+      logoText: "LegalTalents"
+    },
+    {
+      id: "rh",
+      title: "NEXYTAL CONSEIL RH",
+      subtitle: "GPEC & CLIMAT SOCIAL",
+      year: "2026",
+      description: "Audit organisationnel, structuration de la marque employeur, gestion des emplois et compétences et qualité de vie au travail (RSE).",
+      gradient: "from-[#111827] to-[#030712]", // Style Gris Ardoise sombre / Charbon
+      textColor: "text-slate-100",
+      badgeBg: "bg-slate-900/40",
+      image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=500&q=80",
+      icon: Briefcase,
+      logoText: "RHTalents"
     }
   ];
 
   return (
     <Layout>
-      {/* 1. Hero Section (ALT RH Inspired Form, Dark, Massive, Deep Blue with glowing background) */}
-      <section className="relative bg-[#0B192C] text-white py-20 md:py-32 overflow-hidden">
-        {/* Abstract Glowing Background Image */}
-        <div className="absolute inset-0 z-0 opacity-40 mix-blend-screen pointer-events-none">
-          <img
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663455782975/9HMyiv9EyN2y8UvBTTkJTq/nexytal_hero_bg-eqf2ssCfxPWceerTL2UKiv.webp"
-            alt="High tech glow"
-            className="w-full h-full object-cover"
-          />
-        </div>
-        {/* Grid pattern overlay */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-20 pointer-events-none"></div>
+      {/* 1. Hero Section (Dynamic Carousel with fade transition) */}
+      <section className="relative h-[500px] md:h-[620px] bg-slate-950 overflow-hidden text-white">
+        {/* Carousel slides */}
+        {heroSlides.map((slide, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+              index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
+            }`}
+          >
+            {/* Slide Background Image */}
+            <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/80 to-transparent z-10"></div>
+            <img
+              src={slide.image}
+              alt={slide.title}
+              className="w-full h-full object-cover object-center scale-105 transition-transform duration-10000"
+            />
 
-        <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            {/* Left Column: Text & CTAs */}
-            <div className="lg:col-span-7 space-y-6 text-left">
-              <div className="inline-flex items-center space-x-2 bg-slate-800/80 border border-slate-700 px-3.5 py-1.5 rounded-full text-xs font-bold text-slate-300">
-                <span className="w-2 h-2 rounded-full bg-[#F17A28] animate-ping"></span>
-                <span>Nouveauté 2026 : Intégration IA & Cybersécurité</span>
-              </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-tight text-white">
-                Développez votre expertise <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F17A28] via-amber-500 to-orange-400">
-                  dans les secteurs clés
-                </span>
-              </h1>
-              <p className="text-lg md:text-xl text-slate-300 leading-relaxed max-w-2xl font-medium">
-                NEXYTAL Groupe est le partenaire stratégique national pour vos enjeux de formation, d'accompagnement RH, de cybersécurité, de fiscalité et d'intelligence artificielle.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <Link href="/expertises">
-                  <Button className="bg-[#F17A28] hover:bg-[#d66218] text-white font-bold text-base px-8 py-6 rounded-md shadow-lg shadow-orange-500/10 transition-all duration-300 flex items-center justify-center space-x-2 group active:scale-95">
-                    <span>Découvrir nos expertises</span>
-                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                </Link>
-                <Link href="/contact">
-                  <Button variant="outline" className="border-slate-700 hover:border-slate-500 text-slate-200 hover:text-white bg-slate-800/40 hover:bg-slate-800/70 font-bold text-base px-8 py-6 rounded-md transition-all duration-300">
-                    Prendre rendez-vous
-                  </Button>
-                </Link>
-              </div>
-            </div>
-
-            {/* Right Column: Visual Showcase (High-end card stack) */}
-            <div className="lg:col-span-5 relative hidden lg:block">
-              <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border border-slate-700/50 bg-slate-900 group">
-                <img
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663455782975/9HMyiv9EyN2y8UvBTTkJTq/nexytal_coaching-Xuxi4vHHRQ2kjxhffsggcY.webp"
-                  alt="Coaching NEXYTAL"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/40 to-transparent"></div>
-                <div className="absolute bottom-6 left-6 right-6 text-left">
-                  <span className="text-xs font-bold text-[#F17A28] uppercase tracking-widest bg-orange-500/10 border border-orange-500/20 px-2.5 py-1 rounded">
-                    Coaching & Stratégie
+            {/* Slide Content */}
+            <div className="absolute inset-0 z-20 flex items-center">
+              <div className="max-w-7xl mx-auto px-4 md:px-6 w-full text-left">
+                <div className="max-w-3xl space-y-6">
+                  <span className="inline-block bg-[#c22d4a] text-white text-xs font-extrabold tracking-widest px-3 py-1.5 rounded uppercase">
+                    {slide.badge}
                   </span>
-                  <h3 className="text-xl font-bold text-white mt-2">NEXYTAL Coaching</h3>
-                  <p className="text-sm text-slate-300 mt-1">L'alliance de l'accompagnement humain et de l'intelligence artificielle.</p>
+                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
+                    {slide.title}
+                  </h1>
+                  <p className="text-lg text-slate-300 max-w-2xl font-medium leading-relaxed">
+                    {slide.description}
+                  </p>
+                  <div className="flex gap-4 pt-2">
+                    <Link href="/expertises">
+                      <Button className="bg-[#c22d4a] hover:bg-[#a1233c] text-white font-bold text-sm px-6 py-5 rounded-md flex items-center space-x-2 group">
+                        <span>Nos expertises</span>
+                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      </Button>
+                    </Link>
+                    <Link href="/contact">
+                      <Button variant="outline" className="border-white/20 hover:border-white/40 text-white bg-white/5 hover:bg-white/10 font-bold text-sm px-6 py-5 rounded-md">
+                        Prendre RDV
+                      </Button>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+        ))}
+
+        {/* Carousel Controls */}
+        <button
+          onClick={prevSlide}
+          className="absolute left-4 top-1/2 -translate-y-1/2 z-30 p-2.5 rounded-full bg-black/20 hover:bg-black/40 text-white border border-white/10 backdrop-blur-sm transition-all cursor-pointer"
+        >
+          <ChevronLeft className="w-5 h-5" />
+        </button>
+        <button
+          onClick={nextSlide}
+          className="absolute right-4 top-1/2 -translate-y-1/2 z-30 p-2.5 rounded-full bg-black/20 hover:bg-black/40 text-white border border-white/10 backdrop-blur-sm transition-all cursor-pointer"
+        >
+          <ArrowRight className="w-5 h-5" />
+        </button>
+
+        {/* Carousel Indicators */}
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 flex space-x-2">
+          {heroSlides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentSlide(index)}
+              className={`w-2.5 h-2.5 rounded-full transition-all cursor-pointer ${
+                index === currentSlide ? "bg-[#c22d4a] w-8" : "bg-white/40 hover:bg-white/60"
+              }`}
+            ></button>
+          ))}
         </div>
       </section>
 
-      {/* 2. Key Metrics Bar (ALT RH Style stats bar) */}
-      <section className="bg-[#070F1E] border-y border-slate-800 py-8 relative z-20">
-        <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div className="space-y-1">
-              <p className="text-3xl md:text-4xl font-black text-[#F17A28]">98%</p>
-              <p className="text-xs md:text-sm font-semibold uppercase tracking-wider text-slate-400">Taux de satisfaction</p>
-            </div>
-            <div className="space-y-1">
-              <p className="text-3xl md:text-4xl font-black text-[#F17A28]">15+</p>
-              <p className="text-xs md:text-sm font-semibold uppercase tracking-wider text-slate-400">Implantations régionales</p>
-            </div>
-            <div className="space-y-1">
-              <p className="text-3xl md:text-4xl font-black text-[#F17A28]">12 000+</p>
-              <p className="text-xs md:text-sm font-semibold uppercase tracking-wider text-slate-400">Professionnels formés</p>
-            </div>
-            <div className="space-y-1">
-              <p className="text-3xl md:text-4xl font-black text-[#F17A28]">24h</p>
-              <p className="text-xs md:text-sm font-semibold uppercase tracking-wider text-slate-400">Délai de réponse garanti</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 3. Expertises Section (NEXYTAL content, modern grid presentation) */}
-      <section className="py-20 md:py-28 bg-slate-50">
+      {/* 2. Main Body: 6 Expertises Containers (Linking Talents Cards Design) */}
+      <section className="py-20 md:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           {/* Header */}
-          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <h2 className="text-xs font-bold uppercase tracking-widest text-[#F17A28]">Nos pôles d'excellence</h2>
-            <p className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">
-              Une offre globale structurée par spécialités
-            </p>
-            <p className="text-base text-slate-600">
-              Chaque entité de NEXYTAL Groupe apporte une expertise pointue et des solutions adaptées aux exigences réglementaires et technologiques de votre secteur.
+          <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
+            <span className="text-xs font-extrabold uppercase tracking-widest text-[#c22d4a] bg-rose-50 border border-rose-100 px-3 py-1.5 rounded-full">
+              Domaines d'Expertise
+            </span>
+            <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">
+              Nos pôles d'accompagnement spécialisés
+            </h2>
+            <p className="text-base text-slate-500 font-medium">
+              Chaque entité de NEXYTAL Groupe apporte une expertise pointue pour répondre à l'ensemble des exigences de votre organisation.
             </p>
           </div>
 
-          {/* Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Grid of 6 Containers matching the user's image exactly */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             {expertises.map((exp) => {
               const IconComponent = exp.icon;
               return (
-                <Card key={exp.id} className="overflow-hidden border-none shadow-md hover:shadow-xl transition-all duration-300 bg-white flex flex-col group h-full">
-                  <div className="relative aspect-[16/10] overflow-hidden">
-                    <img
-                      src={exp.image}
-                      alt={exp.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-900/10 to-transparent"></div>
-                    <div className="absolute bottom-4 left-4 flex items-center space-x-2">
-                      <div className={`p-2 rounded-lg bg-gradient-to-tr ${exp.color} text-white shadow-md`}>
-                        <IconComponent className="w-5 h-5" />
+                <div
+                  key={exp.id}
+                  className={`relative rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-row bg-gradient-to-r ${exp.gradient} h-[280px] md:h-[300px] text-left group`}
+                >
+                  {/* Left Column: Content & Text (60% width) */}
+                  <div className="w-[58%] md:w-[62%] p-6 md:p-8 flex flex-col justify-between relative z-10">
+                    <div className="space-y-3">
+                      {/* Badge "ÉTUDE DE RÉMUNÉRATION / DOMAINE" style */}
+                      <div className={`rounded-xl p-3 w-fit ${exp.badgeBg} border border-white/5`}>
+                        <p className="text-[10px] font-black tracking-wider text-white uppercase opacity-90 leading-tight">
+                          {exp.subtitle}
+                        </p>
+                        <p className="text-lg md:text-xl font-black text-white mt-1">
+                          {exp.year}
+                        </p>
                       </div>
-                      <span className="text-xs font-bold text-white uppercase tracking-widest bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded">
-                        {exp.subtitle}
-                      </span>
-                    </div>
-                  </div>
-                  <CardContent className="p-6 flex-grow flex flex-col justify-between text-left space-y-4">
-                    <div className="space-y-2">
-                      <h3 className="text-xl font-black text-slate-900 group-hover:text-[#F17A28] transition-colors duration-200">
+
+                      {/* Title */}
+                      <h3 className="text-lg md:text-xl font-black text-white leading-tight tracking-tight">
                         {exp.title}
                       </h3>
-                      <p className="text-sm text-slate-600 leading-relaxed">
-                        {exp.description}
-                      </p>
                     </div>
+
+                    {/* Short description */}
+                    <p className="text-xs text-white/80 line-clamp-3 leading-relaxed font-medium">
+                      {exp.description}
+                    </p>
+
+                    {/* CTA Link */}
                     <div className="pt-2">
                       <Link href="/expertises">
-                        <div className="inline-flex items-center space-x-1.5 text-sm font-bold text-[#F17A28] hover:text-[#d66218] transition-colors cursor-pointer group/link">
-                          <span>En savoir plus</span>
-                          <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
+                        <div className="inline-flex items-center space-x-1.5 text-xs font-extrabold text-white hover:opacity-90 cursor-pointer group/link">
+                          <span>Découvrir le pôle</span>
+                          <ArrowRight className="w-3.5 h-3.5 group-hover/link:translate-x-1 transition-transform" />
                         </div>
                       </Link>
                     </div>
-                  </CardContent>
-                </Card>
+                  </div>
+
+                  {/* Right Column: Profile Image (42% width) */}
+                  <div className="w-[42%] md:w-[38%] relative h-full shrink-0">
+                    <img
+                      src={exp.image}
+                      alt={exp.title}
+                      className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                    />
+                    {/* Radial shadow overlay to blend image into the gradient */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/10 to-black/20"></div>
+
+                    {/* Angle Tab Logo (Linking Talents Style) */}
+                    <div className="absolute bottom-0 right-0 bg-white px-4 py-2.5 rounded-tl-2xl shadow-lg border-t border-l border-slate-100 flex items-center space-x-1.5">
+                      <IconComponent className="w-3.5 h-3.5 text-[#c22d4a]" />
+                      <span className="text-[9px] font-black text-slate-900 tracking-wider">
+                        {exp.logoText}
+                      </span>
+                    </div>
+                  </div>
+                </div>
               );
             })}
           </div>
         </div>
       </section>
 
-      {/* 4. Resources / Studies Section (Linking Talents Inspired Content) */}
-      <section className="py-20 md:py-28 bg-white border-t border-slate-100">
-        <div className="max-w-7xl mx-auto px-4 md:px-6">
-          {/* Header */}
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
-            <div className="text-left space-y-4 max-w-2xl">
-              <h2 className="text-xs font-bold uppercase tracking-widest text-[#F17A28]">Études & Publications</h2>
-              <p className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">
-                Décryptez les tendances du marché
-              </p>
-              <p className="text-base text-slate-600">
-                Nos experts publient régulièrement des baromètres, guides pratiques et études de rémunération sectorielles pour vous guider dans vos décisions stratégiques.
-              </p>
-            </div>
-            <div>
-              <Link href="/ressources">
-                <Button className="bg-[#0B192C] hover:bg-slate-800 text-white font-bold px-6 py-5 rounded-md flex items-center space-x-2">
-                  <span>Toutes les ressources</span>
-                  <ArrowRight className="w-4 h-4" />
-                </Button>
-              </Link>
-            </div>
-          </div>
-
-          {/* Studies Grid (Linking Talents Cards) */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {featuredStudies.map((study, index) => (
-              <div
-                key={index}
-                className={`bg-slate-50 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between text-left ${study.color} group`}
-              >
-                <div className="p-6 space-y-4">
-                  <div className="relative aspect-[16/10] rounded-lg overflow-hidden mb-4">
-                    <img
-                      src={study.image}
-                      alt={study.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                    <div className="absolute top-3 left-3">
-                      <span className="text-[10px] font-bold text-white uppercase tracking-widest bg-slate-950/80 backdrop-blur-sm px-2.5 py-1 rounded">
-                        {study.category}
-                      </span>
-                    </div>
-                  </div>
-                  <h3 className="text-lg font-bold text-slate-900 group-hover:text-[#F17A28] transition-colors duration-200">
-                    {study.title}
-                  </h3>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    {study.description}
-                  </p>
-                </div>
-                <div className="p-6 pt-0">
-                  <Link href="/ressources">
-                    <Button className="w-full bg-white hover:bg-[#F17A28] hover:text-white text-slate-800 border border-slate-200 hover:border-[#F17A28] font-bold py-5 rounded-md flex items-center justify-center space-x-2 shadow-sm transition-all duration-300">
-                      <Download className="w-4 h-4" />
-                      <span>Télécharger l'étude</span>
-                    </Button>
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 5. Trust & Certifications (ALT RH Qualiopi Banner) */}
-      <section className="bg-[#0B192C] text-white py-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_120%,rgba(241,122,40,0.15),transparent_50%)] pointer-events-none"></div>
-        <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-            <div className="lg:col-span-8 text-left space-y-4">
-              <div className="flex items-center space-x-2 text-[#F17A28]">
-                <Award className="w-6 h-6" />
-                <span className="font-bold tracking-wide uppercase text-sm">Garantie de Qualité Nationale</span>
-              </div>
-              <h3 className="text-2xl md:text-3xl font-black tracking-tight">
-                Un organisme certifié Qualiopi pour vos financements
-              </h3>
-              <p className="text-slate-300 max-w-3xl leading-relaxed text-sm md:text-base">
-                NEXYTAL Trainers est agréé au titre des actions de formation. Nos parcours certifiants et diplômants sont éligibles aux différents dispositifs de financement (CPF, OPCO, Transitions Pro, Pôle Emploi). Notre équipe vous accompagne intégralement dans le montage de vos dossiers de prise en charge.
-              </p>
-            </div>
-            <div className="lg:col-span-4 flex justify-center lg:justify-end">
-              <div className="bg-white/5 backdrop-blur-md border border-white/10 p-6 rounded-xl flex flex-col items-center text-center space-y-3 w-full max-w-xs shadow-xl">
-                <div className="w-16 h-16 rounded-full bg-[#F17A28]/20 flex items-center justify-center text-[#F17A28]">
-                  <Award className="w-8 h-8" />
-                </div>
-                <div>
-                  <p className="font-black text-white text-lg">Certification Qualiopi</p>
-                  <p className="text-xs text-slate-400 mt-1">Délivrée au titre de la catégorie : Actions de formation</p>
-                </div>
-                <div className="pt-2 w-full border-t border-white/10">
-                  <span className="text-[10px] uppercase tracking-widest text-slate-400 font-bold">République Française</span>
-                </div>
-              </div>
-            </div>
+      {/* 3. Global Call to Action (Pure White with subtle border) */}
+      <section className="bg-slate-50 border-t border-slate-100 py-20 relative overflow-hidden">
+        <div className="max-w-5xl mx-auto px-4 md:px-6 text-center space-y-6 relative z-10">
+          <span className="text-xs font-extrabold uppercase tracking-widest text-[#c22d4a]">
+            Contactez nos cabinets
+          </span>
+          <h2 className="text-3xl md:text-4xl font-black tracking-tight text-slate-900">
+            Un projet de recrutement ou d'accompagnement ?
+          </h2>
+          <p className="text-slate-500 max-w-2xl mx-auto text-sm md:text-base font-medium leading-relaxed">
+            Nos consultants spécialisés vous recontactent sous 24h pour étudier vos besoins et vous proposer une stratégie sur-mesure.
+          </p>
+          <div className="pt-4">
+            <Link href="/contact">
+              <Button className="bg-[#c22d4a] hover:bg-[#a1233c] text-white font-black px-8 py-6 rounded-md shadow-md shadow-rose-500/10 text-base flex items-center space-x-2 mx-auto group">
+                <span>Parler à un consultant</span>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

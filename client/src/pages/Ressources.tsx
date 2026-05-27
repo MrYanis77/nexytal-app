@@ -27,7 +27,7 @@ export default function Ressources() {
       category: "RH & Recrutement",
       type: "Études",
       date: "Avril 2026",
-      description: "Analyse approfondie des besoins en recrutement, des pénuries de talents et des nouvelles exigences de formation pour les soignants.",
+      description: "Analyse approfondie des besoins en recrutement, des pénuries de talents et des nouvelles exigences d'organisation pour les cliniques et hôpitaux.",
       image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=500&q=80",
       downloadUrl: "#"
     },
@@ -36,7 +36,7 @@ export default function Ressources() {
       category: "IA & Technologie",
       type: "Études",
       date: "Mars 2026",
-      description: "Un état des lieux exhaustif des menaces actuelles, des obligations réglementaires (NIS 2) et des solutions de formation pour sécuriser votre entreprise.",
+      description: "Un état des lieux exhaustif des menaces actuelles, des obligations réglementaires (NIS 2) et des solutions d'audit pour sécuriser votre entreprise.",
       image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=500&q=80",
       downloadUrl: "#"
     },
@@ -86,25 +86,24 @@ export default function Ressources() {
 
   return (
     <Layout>
-      {/* Page Header (ALT RH Inspired, Dark Blue Banner) */}
-      <section className="bg-[#0B192C] text-white py-16 md:py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(241,122,40,0.1),transparent_40%)] pointer-events-none"></div>
-        <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10 text-left">
+      {/* Page Header - Pure White, Minimal */}
+      <section className="bg-slate-50 border-b border-slate-100 py-16 md:py-20 relative overflow-hidden text-left">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
           <div className="space-y-4 max-w-3xl">
-            <div className="inline-flex items-center space-x-2 bg-slate-800/80 border border-slate-700 px-3.5 py-1.5 rounded-full text-xs font-bold text-slate-300">
-              <span>Ressources</span>
-            </div>
-            <h1 className="text-3xl md:text-5xl font-black tracking-tight leading-tight">
-              Études Métiers & Ressources
+            <span className="text-xs font-extrabold uppercase tracking-widest text-[#c22d4a] bg-rose-50 border border-rose-100 px-3 py-1.5 rounded-full">
+              Ressources & Études
+            </span>
+            <h1 className="text-3xl md:text-5xl font-black tracking-tight leading-tight text-slate-900">
+              Études Métiers & Rémunérations
             </h1>
-            <p className="text-base md:text-lg text-slate-300 leading-relaxed">
-              Téléchargez nos analyses exclusives, livres blancs et baromètres pour décrypter les enjeux RH, technologiques et juridiques de votre secteur.
+            <p className="text-base md:text-lg text-slate-500 font-medium leading-relaxed">
+              Téléchargez nos analyses exclusives, livres blancs et baromètres pour décrypter les enjeux RH, technologiques, fiscaux et juridiques de votre secteur.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Filter and Search Section (Linking Talents Inspired) */}
+      {/* Filter and Search Section */}
       <section className="py-10 bg-white border-b border-slate-100 sticky top-[72px] md:top-[88px] z-40 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="flex flex-col lg:flex-row gap-6 justify-between items-center">
@@ -116,7 +115,7 @@ export default function Ressources() {
                   onClick={() => setSelectedCategory(cat)}
                   className={`px-4 py-2 rounded-full text-xs font-bold transition-all duration-200 cursor-pointer ${
                     selectedCategory === cat
-                      ? "bg-[#F17A28] text-white shadow-md shadow-orange-500/10"
+                      ? "bg-[#c22d4a] text-white shadow-md shadow-rose-500/10"
                       : "bg-slate-100 text-slate-600 hover:bg-slate-200"
                   }`}
                 >
@@ -140,7 +139,7 @@ export default function Ressources() {
         </div>
       </section>
 
-      {/* Resources Grid (Linking Talents Cards Layout) */}
+      {/* Resources Grid */}
       <section className="py-16 md:py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           {filteredResources.length > 0 ? (
@@ -159,10 +158,10 @@ export default function Ressources() {
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       />
                       <div className="absolute top-3 left-3 flex gap-2">
-                        <span className="text-[10px] font-bold text-white uppercase tracking-widest bg-[#0B192C] px-2.5 py-1 rounded">
+                        <span className="text-[10px] font-bold text-white uppercase tracking-widest bg-slate-900 px-2.5 py-1 rounded">
                           {res.type}
                         </span>
-                        <span className="text-[10px] font-bold text-white uppercase tracking-widest bg-[#F17A28] px-2.5 py-1 rounded">
+                        <span className="text-[10px] font-bold text-white uppercase tracking-widest bg-[#c22d4a] px-2.5 py-1 rounded">
                           {res.category}
                         </span>
                       </div>
@@ -175,7 +174,7 @@ export default function Ressources() {
                     </div>
 
                     {/* Content */}
-                    <h3 className="text-lg font-black text-slate-900 group-hover:text-[#F17A28] transition-colors duration-200 line-clamp-2 leading-snug">
+                    <h3 className="text-lg font-black text-slate-900 group-hover:text-[#c22d4a] transition-colors duration-200 line-clamp-2 leading-snug">
                       {res.title}
                     </h3>
                     <p className="text-sm text-slate-600 leading-relaxed line-clamp-3">
@@ -187,7 +186,7 @@ export default function Ressources() {
                   <div className="p-6 pt-0">
                     <Button
                       onClick={() => handleDownload(res.title)}
-                      className="w-full bg-white hover:bg-[#F17A28] hover:text-white text-slate-800 border border-slate-200 hover:border-[#F17A28] font-bold py-5 rounded-md flex items-center justify-center space-x-2 shadow-sm transition-all duration-300"
+                      className="w-full bg-white hover:bg-[#c22d4a] hover:text-white text-slate-800 border border-slate-200 hover:border-[#c22d4a] font-bold py-5 rounded-md flex items-center justify-center space-x-2 shadow-sm transition-all duration-300"
                     >
                       <Download className="w-4 h-4" />
                       <span>Télécharger gratuitement</span>
@@ -208,7 +207,7 @@ export default function Ressources() {
                   setSearchTerm("");
                   setSelectedCategory("Tous");
                 }}
-                className="bg-[#0B192C] hover:bg-slate-800 text-white font-bold"
+                className="bg-slate-900 hover:bg-slate-800 text-white font-bold"
               >
                 Réinitialiser la recherche
               </Button>
@@ -217,12 +216,11 @@ export default function Ressources() {
         </div>
       </section>
 
-      {/* Newsletter / Stay Informed (ALT RH CTA style) */}
-      <section className="bg-[#0B192C] text-white py-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_0%_100%,rgba(241,122,40,0.1),transparent_40%)] pointer-events-none"></div>
+      {/* Newsletter */}
+      <section className="bg-slate-900 text-white py-16 relative overflow-hidden">
         <div className="max-w-5xl mx-auto px-4 md:px-6 relative z-10 text-center space-y-6">
           <h2 className="text-2xl md:text-3xl font-black tracking-tight">Recevez nos prochaines études directement</h2>
-          <p className="text-slate-300 max-w-2xl mx-auto text-sm md:text-base">
+          <p className="text-slate-400 max-w-2xl mx-auto text-sm md:text-base font-medium">
             Inscrivez-vous à notre newsletter mensuelle pour être informé en priorité de la sortie de nos baromètres de rémunération et de nos guides sectoriels.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto pt-2">
@@ -233,7 +231,7 @@ export default function Ressources() {
             />
             <Button
               onClick={() => toast.success("Inscription enregistrée avec succès !")}
-              className="bg-[#F17A28] hover:bg-[#d66218] text-white font-bold py-5 rounded-md px-6 shrink-0"
+              className="bg-[#c22d4a] hover:bg-[#a1233c] text-white font-bold py-5 rounded-md px-6 shrink-0"
             >
               S'abonner
             </Button>

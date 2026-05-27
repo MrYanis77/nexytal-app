@@ -13,7 +13,7 @@ export default function Contact() {
     email: "",
     phone: "",
     company: "",
-    pole: "Formation",
+    pole: "Recrutement",
     message: ""
   });
 
@@ -36,31 +36,30 @@ export default function Contact() {
 
   return (
     <Layout>
-      {/* Page Header (ALT RH Inspired, Dark Blue Banner) */}
-      <section className="bg-[#0B192C] text-white py-16 md:py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_90%_120%,rgba(241,122,40,0.1),transparent_40%)] pointer-events-none"></div>
-        <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10 text-left">
+      {/* Page Header - Pure White, Minimal */}
+      <section className="bg-slate-50 border-b border-slate-100 py-16 md:py-20 relative overflow-hidden text-left">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
           <div className="space-y-4 max-w-3xl">
-            <div className="inline-flex items-center space-x-2 bg-slate-800/80 border border-slate-700 px-3.5 py-1.5 rounded-full text-xs font-bold text-slate-300">
-              <span>Contact</span>
-            </div>
-            <h1 className="text-3xl md:text-5xl font-black tracking-tight leading-tight">
+            <span className="text-xs font-extrabold uppercase tracking-widest text-[#c22d4a] bg-rose-50 border border-rose-100 px-3 py-1.5 rounded-full">
+              Contact
+            </span>
+            <h1 className="text-3xl md:text-5xl font-black tracking-tight leading-tight text-slate-900">
               Contactez NEXYTAL Groupe
             </h1>
-            <p className="text-base md:text-lg text-slate-300 leading-relaxed">
-              Une question ? Un projet de formation ou d'accompagnement ? Nos équipes régionales sont à votre entière disposition.
+            <p className="text-base md:text-lg text-slate-500 font-medium leading-relaxed">
+              Une question ? Un projet de recrutement ou d'accompagnement ? Nos équipes de consultants régionaux sont à votre entière disposition.
             </p>
           </div>
         </div>
       </section>
 
       {/* Form and Info Grid */}
-      <section className="py-20 md:py-28 bg-slate-50">
+      <section className="py-20 md:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
             {/* Left Column: Form Card */}
             <div className="lg:col-span-7">
-              <Card className="border-none shadow-md bg-white p-6 md:p-8 text-left">
+              <Card className="border border-slate-100 shadow-sm bg-slate-50 p-6 md:p-8 text-left">
                 {!submitted ? (
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -71,7 +70,7 @@ export default function Contact() {
                           required
                           value={formData.name}
                           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                          className="bg-slate-50 border-slate-200 focus:bg-white py-5 rounded-md"
+                          className="bg-white border-slate-200 focus:bg-white py-5 rounded-md"
                           placeholder="Jean Dupont"
                         />
                       </div>
@@ -82,7 +81,7 @@ export default function Contact() {
                           required
                           value={formData.email}
                           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                          className="bg-slate-50 border-slate-200 focus:bg-white py-5 rounded-md"
+                          className="bg-white border-slate-200 focus:bg-white py-5 rounded-md"
                           placeholder="jean.dupont@entreprise.com"
                         />
                       </div>
@@ -95,7 +94,7 @@ export default function Contact() {
                           type="tel"
                           value={formData.phone}
                           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                          className="bg-slate-50 border-slate-200 focus:bg-white py-5 rounded-md"
+                          className="bg-white border-slate-200 focus:bg-white py-5 rounded-md"
                           placeholder="+33 (0)6 12 34 56 78"
                         />
                       </div>
@@ -105,7 +104,7 @@ export default function Contact() {
                           type="text"
                           value={formData.company}
                           onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                          className="bg-slate-50 border-slate-200 focus:bg-white py-5 rounded-md"
+                          className="bg-white border-slate-200 focus:bg-white py-5 rounded-md"
                           placeholder="Ma Société SAS"
                         />
                       </div>
@@ -116,15 +115,14 @@ export default function Contact() {
                       <select
                         value={formData.pole}
                         onChange={(e) => setFormData({ ...formData, pole: e.target.value })}
-                        className="w-full bg-slate-50 border border-slate-200 focus:bg-white rounded-md text-sm font-medium p-3 focus:outline-none focus:ring-2 focus:ring-ring"
+                        className="w-full bg-white border border-slate-200 focus:bg-white rounded-md text-sm font-medium p-3 focus:outline-none focus:ring-2 focus:ring-ring"
                       >
                         <option value="Coaching">NEXYTAL Coaching (Accompagnement & IA)</option>
                         <option value="Médical">NEXYTAL Médical (Santé & Secteur Public)</option>
-                        <option value="Recrutement">NEXYTAL Recrutement (Talents & Executive Search)</option>
-                        <option value="Formation">NEXYTAL Trainers (Organisme de Formation)</option>
-                        <option value="RH">NEXYTAL RH (Conseil & Accompagnement)</option>
-                        <option value="Cybersécurité">NEXYTAL Cybersécurité (Audit & Résilience)</option>
-                        <option value="Fiscal">NEXYTAL Fiscal & Juridique (Conformité)</option>
+                        <option value="Recrutement">NEXYTAL Recrutement (Executive Search)</option>
+                        <option value="Cybersécurité">NEXYTAL Cyber (Audit & Sécurité)</option>
+                        <option value="Fiscal">NEXYTAL Fiscal (Juridique & Conformité)</option>
+                        <option value="RH">NEXYTAL Conseil RH (GPEC & Climat Social)</option>
                       </select>
                     </div>
 
@@ -135,7 +133,7 @@ export default function Contact() {
                         rows={5}
                         value={formData.message}
                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                        className="bg-slate-50 border-slate-200 focus:bg-white rounded-md"
+                        className="bg-white border-slate-200 focus:bg-white rounded-md"
                         placeholder="Décrivez brièvement votre projet ou votre demande..."
                       />
                     </div>
@@ -143,7 +141,7 @@ export default function Contact() {
                     <div className="pt-2">
                       <Button
                         type="submit"
-                        className="w-full bg-[#F17A28] hover:bg-[#d66218] text-white font-bold py-6 rounded-md flex items-center justify-center space-x-2 shadow-lg"
+                        className="w-full bg-[#c22d4a] hover:bg-[#a1233c] text-white font-bold py-6 rounded-md flex items-center justify-center space-x-2 shadow-lg"
                       >
                         <span>Envoyer ma demande</span>
                         <ArrowRight className="w-4 h-4" />
@@ -151,22 +149,22 @@ export default function Contact() {
                     </div>
                   </form>
                 ) : (
-                  <div className="text-center py-12 space-y-6">
+                  <div className="text-center py-12 space-y-6 bg-white rounded-2xl p-6 border border-slate-100 shadow-sm">
                     <div className="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto shadow-sm">
                       <CheckCircle2 className="w-8 h-8" />
                     </div>
                     <div className="space-y-2">
                       <h3 className="text-2xl font-black text-slate-900">Merci pour votre message !</h3>
-                      <p className="text-slate-600 text-sm max-w-md mx-auto leading-relaxed">
+                      <p className="text-slate-600 text-sm max-w-md mx-auto leading-relaxed font-medium">
                         Votre demande a bien été transmise à notre équipe. Un conseiller spécialisé du pôle <strong>NEXYTAL {formData.pole}</strong> prendra contact avec vous sous 24 heures (jours ouvrés).
                       </p>
                     </div>
                     <Button
                       onClick={() => {
                         setSubmitted(false);
-                        setFormData({ name: "", email: "", phone: "", company: "", pole: "Formation", message: "" });
+                        setFormData({ name: "", email: "", phone: "", company: "", pole: "Recrutement", message: "" });
                       }}
-                      className="bg-[#0B192C] hover:bg-slate-800 text-white font-bold"
+                      className="bg-slate-900 hover:bg-slate-800 text-white font-bold"
                     >
                       Envoyer un autre message
                     </Button>
@@ -178,12 +176,12 @@ export default function Contact() {
             {/* Right Column: Contact Details */}
             <div className="lg:col-span-5 space-y-8 text-left">
               <div className="space-y-6">
-                <h2 className="text-xs font-bold uppercase tracking-widest text-[#F17A28]">Nos Coordonnées</h2>
+                <h2 className="text-xs font-bold uppercase tracking-widest text-[#c22d4a]">Nos Coordonnées</h2>
                 <h3 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">
                   Restons en contact
                 </h3>
-                <p className="text-slate-600 leading-relaxed text-sm">
-                  Que vous soyez une entreprise cherchant à former ses équipes, un professionnel de santé en quête d'audit organisationnel ou un dirigeant souhaitant sécuriser ses infrastructures numériques, nous avons une réponse adaptée.
+                <p className="text-slate-500 leading-relaxed text-sm font-medium">
+                  Que vous soyez une entreprise cherchant à recruter ses futurs cadres dirigeants, un établissement de santé en quête d'audit organisationnel ou un dirigeant souhaitant sécuriser ses infrastructures numériques, nous avons une réponse adaptée.
                 </p>
               </div>
 
@@ -194,7 +192,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-bold text-slate-900 text-sm">Siège Social</h4>
-                    <p className="text-xs text-slate-500 mt-1 leading-relaxed">
+                    <p className="text-xs text-slate-500 mt-1 leading-relaxed font-medium">
                       NEXYTAL Groupe SAS<br />
                       8 Avenue des Talents, 75008 Paris
                     </p>
@@ -208,9 +206,9 @@ export default function Contact() {
                   <div>
                     <h4 className="font-bold text-slate-900 text-sm">Téléphone</h4>
                     <p className="text-xs text-slate-500 mt-1">
-                      <a href="tel:+33180886102" className="hover:text-[#F17A28] transition-colors font-bold">+33 (0)1 80 88 61 02</a>
+                      <a href="tel:+33180886102" className="hover:text-[#c22d4a] transition-colors font-bold text-slate-900">+33 (0)1 80 88 61 02</a>
                     </p>
-                    <p className="text-[10px] text-slate-400 mt-0.5">Appel non surtaxé, Lun - Ven : 8h30 - 18h30</p>
+                    <p className="text-[10px] text-slate-400 mt-0.5 font-semibold">Appel non surtaxé, Lun - Ven : 8h30 - 18h30</p>
                   </div>
                 </div>
 
@@ -221,14 +219,14 @@ export default function Contact() {
                   <div>
                     <h4 className="font-bold text-slate-900 text-sm">Email</h4>
                     <p className="text-xs text-slate-500 mt-1">
-                      <a href="mailto:contact@nexytal.com" className="hover:text-[#F17A28] transition-colors font-bold">contact@nexytal.com</a>
+                      <a href="mailto:contact@nexytal.com" className="hover:text-[#c22d4a] transition-colors font-bold text-slate-900">contact@nexytal.com</a>
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-[#0B192C] text-white p-6 rounded-xl space-y-3">
-                <div className="flex items-center space-x-2 text-[#F17A28]">
+              <div className="bg-slate-900 text-white p-6 rounded-xl space-y-3">
+                <div className="flex items-center space-x-2 text-[#c22d4a]">
                   <MessageSquare className="w-5 h-5" />
                   <span className="font-bold text-xs uppercase tracking-wide">Support Réactif</span>
                 </div>

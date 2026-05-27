@@ -15,7 +15,7 @@ export default function Groupe() {
     },
     {
       title: "Humain & Transmission",
-      description: "La formation et le coaching sont ancrés dans l'écoute, le respect et la volonté constante de faire progresser les talents.",
+      description: "La conseil et le coaching sont ancrés dans l'écoute, le respect et la volonté constante de faire progresser les talents.",
       icon: Users,
       color: "text-amber-500 bg-amber-500/10"
     },
@@ -29,18 +29,17 @@ export default function Groupe() {
 
   return (
     <Layout>
-      {/* Page Header (ALT RH Inspired, Dark Blue Banner) */}
-      <section className="bg-[#0B192C] text-white py-16 md:py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_120%,rgba(241,122,40,0.1),transparent_40%)] pointer-events-none"></div>
-        <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10 text-left">
+      {/* Page Header - Pure White, Minimal */}
+      <section className="bg-slate-50 border-b border-slate-100 py-16 md:py-20 relative overflow-hidden text-left">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 relative z-10">
           <div className="space-y-4 max-w-3xl">
-            <div className="inline-flex items-center space-x-2 bg-slate-800/80 border border-slate-700 px-3.5 py-1.5 rounded-full text-xs font-bold text-slate-300">
-              <span>Qui sommes-nous ?</span>
-            </div>
-            <h1 className="text-3xl md:text-5xl font-black tracking-tight leading-tight">
+            <span className="text-xs font-extrabold uppercase tracking-widest text-[#c22d4a] bg-rose-50 border border-rose-100 px-3 py-1.5 rounded-full">
+              Qui sommes-nous ?
+            </span>
+            <h1 className="text-3xl md:text-5xl font-black tracking-tight leading-tight text-slate-900">
               Le Groupe NEXYTAL
             </h1>
-            <p className="text-base md:text-lg text-slate-300 leading-relaxed">
+            <p className="text-base md:text-lg text-slate-500 font-medium leading-relaxed">
               Un collectif d'experts nationaux engagés pour la performance, la sécurité et la conformité des entreprises.
             </p>
           </div>
@@ -53,35 +52,35 @@ export default function Groupe() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Left Column: Story & Vision */}
             <div className="lg:col-span-7 text-left space-y-6">
-              <h2 className="text-xs font-bold uppercase tracking-widest text-[#F17A28]">Notre vocation</h2>
+              <h2 className="text-xs font-bold uppercase tracking-widest text-[#c22d4a]">Notre vocation</h2>
               <h3 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">
                 Accompagner les dirigeants face aux mutations de leur écosystème
               </h3>
-              <p className="text-slate-600 leading-relaxed">
-                Fondé par des professionnels issus de la formation, de la médecine, de la cybersécurité et du droit des affaires, <strong>NEXYTAL Groupe</strong> est né d'un constat simple : les entreprises ont besoin d'un interlocuteur unique capable de les accompagner de manière transverse sur leurs enjeux de croissance, de sécurité et de conformité réglementaire.
+              <p className="text-slate-600 leading-relaxed font-medium text-sm md:text-base">
+                Fondé par des professionnels de la cybersécurité, de l'IA, du recrutement de cadres et du droit des affaires, <strong>NEXYTAL Groupe</strong> est né d'un constat simple : les entreprises ont besoin d'un interlocuteur unique capable de les accompagner de manière transverse sur leurs enjeux de croissance, de sécurité et de conformité réglementaire.
               </p>
-              <p className="text-slate-600 leading-relaxed">
-                Aujourd'hui, à travers nos implantations régionales, nous conseillons et formons chaque année des milliers de professionnels. Notre force réside dans la synergie de nos pôles d'expertises, alliant la technicité de la cybersécurité et de l'intelligence artificielle à la rigueur de l'accompagnement juridique et fiscal, sans jamais oublier l'humain grâce à nos pôles coaching et santé.
+              <p className="text-slate-600 leading-relaxed font-medium text-sm md:text-base">
+                Aujourd'hui, à travers nos implantations régionales, nous conseillons chaque année des centaines de directions générales. Notre force réside dans la synergie de nos pôles d'expertises, alliant la technicité de la cybersécurité et de l'intelligence artificielle à la rigueur de l'accompagnement juridique et fiscal, sans oublier la gestion des ressources humaines et le recrutement de cadres dirigeants.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
                 <div className="flex items-start space-x-3">
                   <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
                   <div>
                     <h4 className="font-bold text-slate-900">Expertise Pluridisciplinaire</h4>
-                    <p className="text-xs text-slate-500 mt-0.5">Synergie unique de 6 pôles spécialisés.</p>
+                    <p className="text-xs text-slate-500 mt-0.5 font-semibold">Synergie unique de 6 pôles spécialisés.</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
                   <div>
                     <h4 className="font-bold text-slate-900">Ancrage Territorial</h4>
-                    <p className="text-xs text-slate-500 mt-0.5">Proximité grâce à nos campus régionaux.</p>
+                    <p className="text-xs text-slate-500 mt-0.5 font-semibold">Proximité grâce à nos cabinets régionaux.</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Right Column: Key visual (premium dark illustration block) */}
+            {/* Right Column: Key visual */}
             <div className="lg:col-span-5 relative">
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl border border-slate-100 bg-slate-50 group">
                 <img
@@ -89,9 +88,9 @@ export default function Groupe() {
                   alt="L'équipe NEXYTAL"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0B192C]/80 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
                 <div className="absolute bottom-6 left-6 right-6 text-left text-white">
-                  <p className="text-xs font-bold uppercase tracking-widest text-[#F17A28]">Notre ADN</p>
+                  <p className="text-xs font-bold uppercase tracking-widest text-[#c22d4a]">Notre ADN</p>
                   <p className="text-lg font-bold mt-1">L'excellence au service de l'humain</p>
                 </div>
               </div>
@@ -104,11 +103,11 @@ export default function Groupe() {
       <section className="py-16 md:py-24 bg-slate-50 border-y border-slate-100">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <h2 className="text-xs font-bold uppercase tracking-widest text-[#F17A28]">Nos piliers</h2>
+            <h2 className="text-xs font-bold uppercase tracking-widest text-[#c22d4a]">Nos piliers</h2>
             <h3 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">
               Les valeurs qui guident nos actions
             </h3>
-            <p className="text-slate-600 text-sm md:text-base">
+            <p className="text-slate-500 text-sm md:text-base font-medium">
               Au quotidien, nos collaborateurs et experts-conseils partagent une vision commune de l'accompagnement d'entreprise.
             </p>
           </div>
@@ -122,7 +121,7 @@ export default function Groupe() {
                     <Icon className="w-6 h-6" />
                   </div>
                   <h4 className="text-xl font-black text-slate-900">{val.title}</h4>
-                  <p className="text-sm text-slate-600 leading-relaxed">{val.description}</p>
+                  <p className="text-sm text-slate-600 leading-relaxed font-medium">{val.description}</p>
                 </Card>
               );
             })}
@@ -130,19 +129,18 @@ export default function Groupe() {
         </div>
       </section>
 
-      {/* Vision & Mission (Asymmetric Layout) */}
+      {/* Vision & Mission */}
       <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Vision Block */}
             <div className="bg-slate-900 text-white p-8 md:p-12 rounded-2xl text-left space-y-6 relative overflow-hidden">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_100%_0%,rgba(241,122,40,0.1),transparent_40%)] pointer-events-none"></div>
-              <div className="p-3 bg-[#F17A28]/10 text-[#F17A28] rounded-xl w-fit border border-[#F17A28]/20">
+              <div className="p-3 bg-white/5 text-[#c22d4a] rounded-xl w-fit border border-white/10">
                 <Eye className="w-6 h-6" />
               </div>
               <h3 className="text-2xl font-black tracking-tight">Notre Vision</h3>
-              <p className="text-slate-300 leading-relaxed text-sm md:text-base">
-                À l'ère de l'intelligence artificielle et de l'interconnexion globale, l'entreprise moderne ne peut plus fonctionner en silos. La sécurité informatique est indissociable de la formation des équipes ; la fiscalité et la conformité juridique doivent s'adapter en temps réel aux outils technologiques. Nous croyons en un accompagnement global, agile et éthique pour transformer ces contraintes réglementaires et techniques en leviers de croissance durable.
+              <p className="text-slate-300 leading-relaxed text-sm md:text-base font-medium">
+                À l'ère de l'intelligence artificielle et de l'interconnexion globale, l'entreprise moderne ne peut plus fonctionner en silos. La sécurité informatique est indissociable de la gestion des équipes ; la fiscalité et la conformité juridique doivent s'adapter en temps réel aux outils technologiques. Nous croyons en un accompagnement global, agile et éthique pour transformer ces contraintes réglementaires et techniques en leviers de croissance durable.
               </p>
             </div>
 
@@ -153,13 +151,13 @@ export default function Groupe() {
                   <Landmark className="w-6 h-6" />
                 </div>
                 <h3 className="text-2xl font-black text-slate-900 tracking-tight">Notre Mission</h3>
-                <p className="text-slate-600 leading-relaxed text-sm md:text-base">
-                  Garantir la sérénité des dirigeants et libérer le potentiel de leurs collaborateurs. En assurant la résilience technique (cybersécurité), la conformité réglementaire (fiscalité, juridique, santé) et la montée en compétences (formation, coaching), nous permettons aux organisations de se concentrer sur leur cœur de métier avec un temps d'avance sur leur marché.
+                <p className="text-slate-600 leading-relaxed text-sm md:text-base font-medium">
+                  Garantir la sérénité des dirigeants et libérer le potentiel de leurs collaborateurs. En assurant la résilience technique (cybersécurité), la conformité réglementaire (fiscalité, juridique, santé) et la montée en compétences (coaching stratégique), nous permettons aux organisations de se concentrer sur leur cœur de métier avec un temps d'avance sur leur marché.
                 </p>
               </div>
               <div className="pt-6 border-t border-slate-200">
                 <Link href="/contact">
-                  <Button className="bg-[#F17A28] hover:bg-[#d66218] text-white font-bold rounded-md flex items-center space-x-2 group">
+                  <Button className="bg-[#c22d4a] hover:bg-[#a1233c] text-white font-bold rounded-md flex items-center space-x-2 group">
                     <span>Rejoindre l'aventure</span>
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
