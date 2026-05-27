@@ -8,19 +8,22 @@ export default function Home() {
   // Carrousel Hero Images & Messages
   const heroSlides = [
     {
-      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663455782975/9HMyiv9EyN2y8UvBTTkJTq/nexytal_hero_bg-eqf2ssCfxPWceerTL2UKiv.webp",
+      // Image 1 : Espace de travail moderne très lumineux, blanc et épuré
+      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80",
       badge: "CONSEIL & RECRUTEMENT",
       title: "Développez vos expertises sectorielles",
       description: "Le partenaire stratégique national pour l'accompagnement, la cybersécurité, l'IA, la fiscalité et le recrutement de vos futurs talents."
     },
     {
-      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663455782975/9HMyiv9EyN2y8UvBTTkJTq/nexytal_coaching-Xuxi4vHHRQ2kjxhffsggcY.webp",
+      // Image 2 : Réunion d'équipe collaborative et lumineuse, fond blanc
+      image: "https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?auto=format&fit=crop&w=1600&q=80",
       badge: "INTELLIGENCE ARTIFICIELLE",
       title: "Accompagner la transition technologique",
       description: "Coaching de dirigeants et intégration de l'intelligence artificielle générative au cœur de vos processus opérationnels."
     },
     {
-      image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663455782975/9HMyiv9EyN2y8UvBTTkJTq/nexytal_cybersecurity-TBbZP2gHBp3hiXMxYVFQe8.webp",
+      // Image 3 : Bureau lumineux et moderne avec des professionnels souriants
+      image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=80",
       badge: "RÉSILIENCE NUMÉRIQUE",
       title: "Sécuriser vos infrastructures cloud",
       description: "Audits de sécurité, tests d'intrusion et formation de sensibilisation de vos collaborateurs face aux cybermenaces."
@@ -123,7 +126,7 @@ export default function Home() {
   return (
     <Layout>
       {/* 1. Hero Section (Dynamic Carousel with fade transition) */}
-      <section className="relative h-[500px] md:h-[620px] bg-slate-950 overflow-hidden text-white">
+      <section className="relative h-[500px] md:h-[620px] bg-slate-100 overflow-hidden text-slate-900 border-b border-slate-200">
         {/* Carousel slides */}
         {heroSlides.map((slide, index) => (
           <div
@@ -132,8 +135,8 @@ export default function Home() {
               index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
             }`}
           >
-            {/* Slide Background Image */}
-            <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/80 to-transparent z-10"></div>
+            {/* Slide Background Image - Soft white gradient overlay for maximum readability */}
+            <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-white/40 z-10"></div>
             <img
               src={slide.image}
               alt={slide.title}
@@ -147,10 +150,10 @@ export default function Home() {
                   <span className="inline-block bg-[#c22d4a] text-white text-xs font-extrabold tracking-widest px-3 py-1.5 rounded uppercase">
                     {slide.badge}
                   </span>
-                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
+                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-tight text-slate-900">
                     {slide.title}
                   </h1>
-                  <p className="text-lg text-slate-300 max-w-2xl font-medium leading-relaxed">
+                  <p className="text-lg text-slate-600 max-w-2xl font-semibold leading-relaxed">
                     {slide.description}
                   </p>
                   <div className="flex gap-4 pt-2">
@@ -161,7 +164,7 @@ export default function Home() {
                       </Button>
                     </Link>
                     <Link href="/contact">
-                      <Button variant="outline" className="border-white/20 hover:border-white/40 text-white bg-white/5 hover:bg-white/10 font-bold text-sm px-6 py-5 rounded-md">
+                      <Button variant="outline" className="border-slate-300 hover:border-slate-400 text-slate-700 bg-white/80 hover:bg-white font-bold text-sm px-6 py-5 rounded-md">
                         Prendre RDV
                       </Button>
                     </Link>
@@ -175,13 +178,13 @@ export default function Home() {
         {/* Carousel Controls */}
         <button
           onClick={prevSlide}
-          className="absolute left-4 top-1/2 -translate-y-1/2 z-30 p-2.5 rounded-full bg-black/20 hover:bg-black/40 text-white border border-white/10 backdrop-blur-sm transition-all cursor-pointer"
+          className="absolute left-4 top-1/2 -translate-y-1/2 z-30 p-2.5 rounded-full bg-white/60 hover:bg-white/90 text-slate-800 border border-slate-200/50 backdrop-blur-sm transition-all cursor-pointer"
         >
           <ChevronLeft className="w-5 h-5" />
         </button>
         <button
           onClick={nextSlide}
-          className="absolute right-4 top-1/2 -translate-y-1/2 z-30 p-2.5 rounded-full bg-black/20 hover:bg-black/40 text-white border border-white/10 backdrop-blur-sm transition-all cursor-pointer"
+          className="absolute right-4 top-1/2 -translate-y-1/2 z-30 p-2.5 rounded-full bg-white/60 hover:bg-white/90 text-slate-800 border border-slate-200/50 backdrop-blur-sm transition-all cursor-pointer"
         >
           <ArrowRight className="w-5 h-5" />
         </button>
@@ -193,7 +196,7 @@ export default function Home() {
               key={index}
               onClick={() => setCurrentSlide(index)}
               className={`w-2.5 h-2.5 rounded-full transition-all cursor-pointer ${
-                index === currentSlide ? "bg-[#c22d4a] w-8" : "bg-white/40 hover:bg-white/60"
+                index === currentSlide ? "bg-[#c22d4a] w-8" : "bg-slate-400 hover:bg-slate-600"
               }`}
             ></button>
           ))}
