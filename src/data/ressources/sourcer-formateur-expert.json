@@ -1,0 +1,48 @@
+{
+  "slug": "sourcer-formateur-expert",
+  "pole": "Trainers",
+  "type": "Guide",
+  "date": "Mars 2026",
+  "title": "Comment sourcer un formateur expert pour votre organisme ?",
+  "description": "Méthodes, canaux et critères pour identifier et attirer les meilleurs formateurs indépendants ou salariés selon vos besoins pédagogiques.",
+  "image": "https://images.pexels.com/photos/3184317/pexels-photo-3184317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+  "intro": "La qualité d'un organisme de formation repose avant tout sur la qualité de ses formateurs. Pourtant, sourcer un formateur expert reste un défi quotidien pour les directeurs pédagogiques. NEXYTAL Trainers partage les meilleures pratiques issues de dizaines de missions de recrutement pédagogique.",
+  "sections": [
+    {
+      "heading": "Définir le bon profil avant de chercher",
+      "body": "Un formateur n'est pas simplement un expert de son domaine. Avant de lancer votre sourcing, posez-vous les bonnes questions : quel public cible (débutants, confirmés, dirigeants) ? Quels formats pédagogiques sont attendus (cours magistral, atelier, simulation, e-learning) ? Quelle est la durée et la fréquence de l'intervention ? Le formateur doit-il produire ses propres supports ou utiliser ceux de l'organisme ? Quelle est la disponibilité géographique requise ? Ce cadrage évite les erreurs de casting et vous permet de rédiger un brief précis qui attirera les bons candidats.",
+      "image": "https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "imageAlt": "Formateur devant un groupe de participants en salle",
+      "quote": {
+        "text": "Le brief de recrutement que nous donnons aux formateurs est aussi détaillé que celui que nous donnerions à un manager. En retour, nous obtenons des candidatures beaucoup plus pertinentes et nous réduisons notre délai de sélection de 50 %.",
+        "author": "Directeur pédagogique, organisme de formation certifié Qualiopi"
+      }
+    },
+    {
+      "heading": "Les 7 canaux de sourcing les plus efficaces",
+      "body": "Canal 1 — LinkedIn Recruiter : la recherche par mots-clés combinés (domaine d'expertise + « formateur » + « intervenant ») donne d'excellents résultats. Canal 2 — Réseaux d'alumni des grandes écoles : les formateurs seniors sont souvent actifs dans les associations d'anciens. Canal 3 — Associations professionnelles sectorielles : l'ANDRH, l'AFNOR, les fédérations métiers publient des annuaires d'experts. Canal 4 — Plateformes de formateurs indépendants (Malt, Workelo, Expert Up). Canal 5 — Recommandations internes : vos propres apprenants connaissent souvent des experts dans leur domaine. Canal 6 — Écoles et universités : les enseignants-chercheurs cumulent fréquemment des activités de formation en entreprise. Canal 7 — NEXYTAL Trainers : notre vivier de formateurs qualifiés couvre 40+ domaines d'expertise.",
+      "image": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "imageAlt": "Responsable formation en recherche sur ordinateur"
+    },
+    {
+      "heading": "Formateur salarié vs indépendant : les différences clés",
+      "body": "Le formateur indépendant offre une grande flexibilité et une expertise souvent pointue, mais implique un statut juridique à clarifier (auto-entrepreneur, EIRL, portage salarial) et une disponibilité variable. Le formateur salarié garantit la disponibilité et la fidélité, mais représente une charge fixe et une moindre spécialisation. Pour les formations récurrentes et à forts volumes, le salarié est souvent plus rentable. Pour les modules spécialisés ou les nouveaux domaines, le formateur indépendant apporte une expertise immédiate. Beaucoup d'organismes construisent un socle de formateurs permanents complété par un vivier d'indépendants experts.",
+      "quote": {
+        "text": "Notre modèle hybride — 4 formateurs salariés pour le core business + 28 indépendants référencés pour les spécialités — nous permet de répondre à des demandes variées sans porter une masse salariale trop lourde.",
+        "author": "Directrice générale, organisme de formation en management"
+      }
+    },
+    {
+      "heading": "Construire et maintenir un vivier de formateurs",
+      "body": "Le recrutement formateur ne doit pas être réactif mais anticipé. Construisez un vivier structuré avec des profils qualifiés par domaine, disponibilité et format pédagogique. Maintenez-le vivant : contactez chaque formateur référencé au moins une fois par trimestre, partagez-leur vos actualités pédagogiques, invitez-les à des événements internes. Un formateur qui se sent appartenir à une communauté professionnelle est 3 fois plus susceptible d'accepter une mission urgente et de recommander votre organisme à ses pairs."
+    }
+  ],
+  "keyPoints": [
+    "Brief pédagogique détaillé avant tout sourcing : public, format, durée, disponibilité",
+    "LinkedIn + associations professionnelles + plateformes indépendants : le trio gagnant",
+    "Formateur salarié pour le core récurrent, indépendant pour les expertises pointues",
+    "Le vivier formateurs doit être actif : contact trimestriel minimum pour le maintenir chaud",
+    "Demandez systématiquement une micro-animation de 15 minutes en entretien",
+    "Vérifiez l'expérience TERRAIN du formateur — l'expertise académique seule ne suffit pas"
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "heroSlides": [
+    {
+      "image": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1600&q=80",
+      "badge": "FORMATIONS",
+      "titleLine1": "Montez en",
+      "titleLine2": "compétences",
+      "description": "Formation professionnelle sur-mesure : management, digital et performance opérationnelle."
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=80",
+      "badge": "NEXYTAL RH",
+      "titleLine1": "Structurez et valorisez",
+      "titleLine2": "vos ressources humaines",
+      "description": "Audit RH, marque employeur, pilotage des talents et accompagnement des transformations humaines pour faire de vos équipes votre premier atout."
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1600&q=80",
+      "badge": "NEXYTAL COACHING",
+      "titleLine1": "Libérez le potentiel",
+      "titleLine2": "de vos dirigeants",
+      "description": "Coaching individuel et collectif pour dirigeants, managers et équipes, afin d'accélérer la performance durable et développer un leadership authentique."
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1600&q=80",
+      "badge": "NEXYTAL MÉDICALE",
+      "titleLine1": "Accompagnez les structures",
+      "titleLine2": "de santé",
+      "description": "Conseil organisationnel, recrutement de profils médicaux spécialisés et amélioration continue des parcours patients pour les établissements de santé."
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=1600&q=80",
+      "badge": "NEXYTAL TRAINERS",
+      "titleLine1": "Recrutez les meilleurs",
+      "titleLine2": "formateurs experts",
+      "description": "Sourcing et mise en relation de formateurs professionnels, consultants pédagogiques et animateurs spécialisés pour vos programmes de formation."
+    },
+    {
+      "image": "https://images.pexels.com/photos/5669619/pexels-photo-5669619.jpeg?auto=compress&cs=tinysrgb&w=1600&q=80",
+      "badge": "NEXYTAL RECRUTEMENTS",
+      "titleLine1": "Identifiez et attirez",
+      "titleLine2": "les talents clés",
+      "description": "Sourcing ciblé, évaluation approfondie et recrutement de profils stratégiques pour renforcer vos équipes et soutenir votre croissance durablement."
+    }
+  ],
+  "expertisesHeader": {
+    "badge": "Domaines d'Expertise",
+    "title": "Nos pôles d'accompagnement spécialisés",
+    "description": "Chaque entité de NEXYTAL Groupe apporte une expertise pointue pour répondre à l'ensemble des exigences de votre organisation."
+  },
+  "expertises": [
+    {
+      "id": "formations",
+      "title": "FORMATIONS",
+      "subtitle": "FORMATION PROFESSIONNELLE",
+      "year": "2026",
+      "description": "Programmes de montée en compétences pour vos équipes : management, outils digitaux, posture commerciale et efficacité opérationnelle.",
+      "gradient": "from-[#1E3A8A] to-[#1E40AF]",
+      "badgeBg": "bg-blue-950/40",
+      "image": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "id": "rh",
+      "title": "NEXYTAL RH",
+      "subtitle": "RESSOURCES HUMAINES",
+      "year": "2026",
+      "description": "Structuration RH, marque employeur, pilotage des talents et accompagnement des transformations humaines.",
+      "gradient": "from-[#0F766E] to-[#115E59]",
+      "badgeBg": "bg-teal-950/40",
+      "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "id": "coaching",
+      "title": "NEXYTAL COACHING",
+      "subtitle": "LEADERSHIP & PERFORMANCE",
+      "year": "2026",
+      "description": "Coaching individuel et collectif pour dirigeants, managers et équipes afin d'accélérer la performance durable.",
+      "gradient": "from-[#7C3AED] to-[#5B21B6]",
+      "badgeBg": "bg-violet-950/40",
+      "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "id": "medicale",
+      "title": "NEXYTAL MÉDICALE",
+      "subtitle": "SANTÉ & MÉDICAL",
+      "year": "2026",
+      "description": "Accompagnement des structures de santé : organisation, recrutement spécialisé et amélioration continue des parcours.",
+      "gradient": "from-[#BE123C] to-[#9F1239]",
+      "badgeBg": "bg-rose-950/40",
+      "image": "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "id": "trainer",
+      "title": "NEXYTAL TRAINER",
+      "subtitle": "TRAINING & DELIVERY",
+      "year": "2026",
+      "description": "Conception et animation de parcours de formation sur-mesure, présentiel et distanciel, avec suivi de progression.",
+      "gradient": "from-[#B45309] to-[#92400E]",
+      "badgeBg": "bg-amber-950/40",
+      "image": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "id": "recrutements",
+      "title": "NEXYTAL RECRUTEMENTS",
+      "subtitle": "RECRUTEMENT DE TALENTS",
+      "year": "2026",
+      "description": "Sourcing ciblé, évaluation approfondie et recrutement de profils clés pour renforcer vos équipes durablement.",
+      "gradient": "from-[#111827] to-[#1F2937]",
+      "badgeBg": "bg-slate-900/40",
+      "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=80"
+    }
+  ],
+  "cta": {
+    "badge": "Contactez nos cabinets",
+    "title": "Un projet de recrutement ou d'accompagnement ?",
+    "description": "Nos consultants spécialisés vous recontactent sous 24h pour étudier vos besoins et vous proposer une stratégie sur-mesure.",
+    "buttonText": "Parler à un consultant"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "erreurs-recrutement",
+  "pole": "Recrutements",
+  "type": "Interview",
+  "date": "Janvier 2026",
+  "title": "Les erreurs de recrutement les plus coûteuses",
+  "description": "Interview de consultants NEXYTAL sur les erreurs récurrentes qui plombent les recrutements et comment les éviter méthodiquement.",
+  "image": "https://images.pexels.com/photos/7651579/pexels-photo-7651579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+  "intro": "Un recrutement raté coûte en moyenne 50 000 € à une entreprise, selon les études du secteur. Pourtant, les mêmes erreurs se répètent. Nos consultants NEXYTAL ont compilé les situations les plus fréquentes pour vous aider à construire un processus de recrutement fiable et efficace.",
+  "sections": [
+    {
+      "heading": "Erreur n°1 : la fiche de poste floue",
+      "body": "C'est l'erreur la plus fréquente et la plus coûteuse. Une fiche de poste vague attire des candidats inadaptés, génère des attentes divergentes entre le manager et le DRH, et crée des déceptions à l'arrivée. Une fiche de poste efficace décrit les 5 missions principales (pas 15), les résultats attendus à 6 mois (pas juste les tâches), le contexte managérial réel (équipe, autonomie, style de management), les critères de sélection discriminants (ceux sans lesquels le candidat ne peut pas réussir) et ceux qui sont un plus. Prenez le temps de la co-construire avec le manager opérationnel.",
+      "image": "https://images.pexels.com/photos/5716001/pexels-photo-5716001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "imageAlt": "RH et manager en train de rédiger ensemble une fiche de poste",
+      "quote": {
+        "text": "On a passé 4 mois à chercher un profil 'idéal' impossible à trouver. Quand on a refait la fiche de poste avec le manager, on a réalisé que 3 des 8 critères étaient négociables. On a recruté en 5 semaines.",
+        "author": "DRH, PME de services de 85 salariés"
+      }
+    },
+    {
+      "heading": "Erreur n°2 : le processus trop long",
+      "body": "En 2026, les meilleurs candidats reçoivent en moyenne 3 offres simultanées et attendent 7 jours maximum avant de prendre une décision. Un processus en 5 rounds d'entretiens étalés sur 3 mois vous fait perdre systématiquement les profils les plus sollicités. Le benchmark des entreprises qui recrutent le mieux : 3 étapes maximum (entretien RH, entretien manager, cas pratique ou mise en situation), un délai total inférieur à 4 semaines, et un retour systématique à J+3 après chaque étape. La lenteur n'est pas un signe de rigueur — c'est un signal négatif sur votre organisation.",
+      "image": "https://images.pexels.com/photos/4226263/pexels-photo-4226263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "imageAlt": "Horloge sur un bureau représentant l'urgence de décision"
+    },
+    {
+      "heading": "Erreur n°3 : décider à l'instinct",
+      "body": "Le biais d'affinité est le plus dangereux des biais cognitifs en recrutement. On recrute souvent quelqu'un qui nous ressemble, qui partage notre école, notre parcours, notre façon de s'exprimer. Résultat : des équipes homogènes, peu créatives, et des recrutements qui échouent parce qu'on a privilégié la forme sur le fond. La solution : définir en amont les critères d'évaluation pour chaque étape, utiliser des grilles structurées et noter les candidats avant de comparer les impressions en réunion de décision. Plusieurs décisionnaires avec des profils différents réduisent considérablement les biais individuels.",
+      "quote": {
+        "text": "On a instauré une règle simple : avant la réunion de débriefing, chaque évaluateur remplit sa grille seul. On ne compare pas nos ressentis en cours d'entretien. Ça a changé la qualité de nos décisions.",
+        "author": "Manager RH, groupe tech de 350 personnes"
+      }
+    },
+    {
+      "heading": "Erreur n°4 : négliger l'intégration",
+      "body": "Le recrutement ne s'arrête pas à la signature du contrat. L'onboarding est la période la plus critique pour la rétention : 20 % des nouvelles recrues quittent l'entreprise dans les 45 premiers jours. Les meilleures pratiques : un programme d'intégration structuré sur 90 jours avec des jalons clairs, un parrain interne désigné avant l'arrivée, un accès aux outils et systèmes dès le premier jour, des réunions de feedback à J+15, J+30 et J+90, et une attention particulière au lien social avec l'équipe. Un salarié bien intégré est 58 % plus susceptible de rester au-delà de 3 ans."
+    }
+  ],
+  "keyPoints": [
+    "Fiche de poste : 5 missions max, résultats attendus à 6 mois, critères discriminants vs souhaitables",
+    "Processus optimal : 3 étapes maximum, moins de 4 semaines au total",
+    "Grille d'évaluation structurée remplie individuellement avant chaque débriefing collectif",
+    "20 % des nouvelles recrues partent dans les 45 premiers jours faute d'intégration",
+    "Parrain désigné avant l'arrivée + accès outils dès J1 = standards minimaux d'onboarding",
+    "Un salarié bien intégré est 58 % plus susceptible de rester au-delà de 3 ans"
+  ]
+}

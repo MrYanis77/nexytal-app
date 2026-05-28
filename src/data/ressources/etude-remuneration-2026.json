@@ -1,0 +1,48 @@
+{
+  "slug": "etude-remuneration-2026",
+  "pole": "RH",
+  "type": "Étude",
+  "date": "Mai 2026",
+  "title": "Étude de rémunération 2026 — tous secteurs",
+  "description": "Panorama complet des niveaux de rémunération par fonction, secteur et région. L'outil de référence pour calibrer votre politique salariale.",
+  "image": "https://images.pexels.com/photos/6693661/pexels-photo-6693661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+  "intro": "Chaque année, NEXYTAL Recrutements analyse les données salariales collectées auprès de milliers d'entreprises et de candidats. L'édition 2026 couvre 28 familles de métiers, 12 secteurs d'activité et 5 grandes régions. Décryptage des chiffres et recommandations pour adapter votre politique salariale.",
+  "sections": [
+    {
+      "heading": "Les grandes tendances de la rémunération en 2026",
+      "body": "Après deux années de rattrapage post-inflation, la progression des salaires se stabilise autour de +3,2 % en médiane sur l'ensemble des secteurs. Mais cette moyenne masque des disparités importantes : les métiers numériques, les ingénieurs en IA et les profils RH spécialisés SIRH progressent de +8 à +12 %, tandis que les fonctions support généralistes restent stables. La rémunération variable a continué à progresser : 67 % des entreprises interrogées proposent désormais au moins un dispositif d'intéressement ou de participation, contre 54 % en 2022.",
+      "image": "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "imageAlt": "Analyse graphique des données salariales",
+      "quote": {
+        "text": "La rémunération reste le premier critère de décision pour 71 % des candidats en phase de négociation. Mais l'écart avec le deuxième critère — la flexibilité — s'est considérablement réduit depuis 2023.",
+        "author": "Directeur associé, NEXYTAL Recrutements"
+      }
+    },
+    {
+      "heading": "Salaires médians par grande famille de métiers",
+      "body": "Parmi les fonctions les mieux rémunérées : les directeurs financiers (85-130k€), les managers IT senior (75-110k€) et les directeurs commerciaux (72-105k€). Dans le registre intermédiaire, les ingénieurs confirmés (48-72k€), les responsables RH (44-65k€) et les chefs de projet digital (42-68k€). En entrée de carrière, les postes commerciaux terrain offrent les packages les plus attractifs grâce aux variables, tandis que les assistants et gestionnaires paie restent sous pression malgré la pénurie.",
+      "image": "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "imageAlt": "Tableau comparatif des rémunérations par secteur"
+    },
+    {
+      "heading": "Disparités régionales : Paris creuse encore l'écart",
+      "body": "L'Île-de-France maintient une prime géographique de +18 à +25 % sur les salaires fixes par rapport à la province. Toutefois, trois métropoles rattrapent progressivement ce différentiel : Lyon (+11 % vs moyenne nationale), Bordeaux (+8 %) et Nantes (+7 %). Avec la généralisation du télétravail hybride, de plus en plus de candidats acceptent des postes parisiens depuis la province en négociant un maintien salarial « Paris ». Cette tendance crée des tensions dans les équipes sur site.",
+      "quote": {
+        "text": "Nous avons dû uniformiser notre grille salariale indépendamment du lieu de résidence pour éviter les inégalités de traitement au sein des mêmes équipes hybrides.",
+        "author": "DRH, scale-up tech de 180 collaborateurs"
+      }
+    },
+    {
+      "heading": "Comment utiliser cette étude pour calibrer votre offre",
+      "body": "Une étude de rémunération n'a de valeur que si elle est utilisée à bon escient. Premier réflexe : repositionnez-vous par rapport à la médiane de votre secteur, et non par rapport à la moyenne globale. Ensuite, intégrez la rémunération globale (fixe + variable + avantages + télétravail + formation) dans votre benchmark. Un candidat arbitre rarement sur le fixe seul. Enfin, actualisez votre grille au moins une fois par an : une grille figée depuis 3 ans est un risque RH majeur dans un marché aussi mobile."
+    }
+  ],
+  "keyPoints": [
+    "Progression salariale médiane de +3,2 % en 2026, avec de fortes variations sectorielles",
+    "Métiers IA et SIRH : +8 à +12 %, les plus dynamiques du marché",
+    "67 % des entreprises proposent de l'intéressement ou de la participation",
+    "Prime géographique Île-de-France : +18 à +25 % vs province",
+    "Lyon, Bordeaux et Nantes réduisent l'écart avec Paris",
+    "Benchmarkez sur la rémunération globale, pas uniquement sur le fixe"
+  ]
+}

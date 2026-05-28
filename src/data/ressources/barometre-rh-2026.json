@@ -1,0 +1,48 @@
+{
+  "slug": "barometre-rh-2026",
+  "pole": "RH",
+  "type": "Étude",
+  "date": "Avril 2026",
+  "title": "Baromètre RH 2026 : fidélisation et hybridation",
+  "description": "Les grandes tendances RH qui façonnent le travail en 2026 : hybridation, fidélisation des talents, nouvelles attentes managériales et priorités des DRH.",
+  "image": "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+  "intro": "Le Baromètre RH NEXYTAL interroge chaque année plus de 500 directions des ressources humaines. L'édition 2026 révèle un tournant majeur : la fidélisation est désormais la priorité numéro 1 devant le recrutement. Analyse des résultats et recommandations opérationnelles.",
+  "sections": [
+    {
+      "heading": "La fidélisation détrône le recrutement",
+      "body": "Pour la première fois depuis 2019, la fidélisation des collaborateurs existants est citée comme priorité n°1 par 64 % des DRH interrogés, devant le recrutement (57 %) et le développement des compétences (51 %). Ce retournement s'explique par la multiplication des départs volontaires (le taux de turnover moyen est passé de 14 % en 2023 à 19 % en 2025) et par la prise de conscience que remplacer un collaborateur coûte entre 50 et 150 % de son salaire annuel brut.",
+      "image": "https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "imageAlt": "Équipe soudée lors d'une réunion de travail",
+      "quote": {
+        "text": "Nous avons calculé qu'un départ en CDI nous coûte en moyenne 42 000 € toutes charges comprises — recrutement, intégration, perte de productivité. La fidélisation est devenue notre investissement le plus rentable.",
+        "author": "DRH, groupe de distribution de 2 300 salariés"
+      }
+    },
+    {
+      "heading": "L'hybridation : un acquis qui génère de nouvelles tensions",
+      "body": "2,3 jours de télétravail par semaine : c'est la moyenne observée dans notre panel. Mais derrière cette stabilisation apparente se cachent des fractures : 41 % des managers signalent des difficultés à maintenir la cohésion d'équipe en hybride, 33 % des salariés déclarent se sentir moins visibles professionnellement et donc moins susceptibles d'être promus. Les entreprises les plus avancées ont mis en place des « chartes d'hybridation » détaillant les règles collectives et les moments de présence obligatoires, réduisant de 28 % les tensions liées au télétravail.",
+      "image": "https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "imageAlt": "Collaborateur en télétravail en réunion vidéo"
+    },
+    {
+      "heading": "Les nouvelles attentes managériales",
+      "body": "Le profil du manager idéal a profondément évolué. En 2026, les collaborateurs attendent d'abord de l'autonomie accordée (83 %), de la reconnaissance explicite (79 %) et de la clarté sur les perspectives d'évolution (74 %). Le management directif, encore dominant en 2020, n'est plus accepté que par 18 % des salariés de moins de 35 ans. La posture de manager-coach s'impose, mais elle nécessite une formation spécifique que 61 % des entreprises n'ont pas encore intégrée à leurs parcours de montée en compétences.",
+      "quote": {
+        "text": "Nos managers ont été promus pour leur expertise technique. Mais ce dont les équipes ont besoin en 2026, c'est d'écoute, de feedback et de sens. Nous avons dû repenser entièrement notre parcours managérial.",
+        "author": "Responsable développement RH, ETI de services"
+      }
+    },
+    {
+      "heading": "L'IA dans les pratiques RH : entre adoption et résistance",
+      "body": "78 % des DRH interrogés déclarent utiliser au moins un outil d'IA dans leurs pratiques RH. Mais les usages restent concentrés sur la rédaction d'offres d'emploi (54 %), le tri de CV (48 %) et les chatbots d'onboarding (31 %). Les applications plus sensibles — évaluation de performance, détection des risques de départ — sont encore minoritaires (moins de 15 %) et font l'objet d'une résistance forte des IRP. La question du cadre éthique de l'IA RH est désormais un sujet de négociation collective dans 23 % des grandes entreprises."
+    }
+  ],
+  "keyPoints": [
+    "Fidélisation : priorité n°1 pour 64 % des DRH, devant le recrutement",
+    "Turnover moyen : 19 % en 2025, en hausse de 5 points sur 2 ans",
+    "2,3 jours de télétravail en moyenne, mais de fortes tensions managériales persistent",
+    "Manager-coach : attendu par 83 % des collaborateurs, formé dans 39 % des entreprises seulement",
+    "IA RH : présente dans 78 % des DRH, mais usages encore concentrés sur les tâches administratives",
+    "Charte d'hybridation : réduit de 28 % les conflits liés au télétravail"
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "header": {
+    "badge": "Nos pôles d'activités",
+    "title": "Domaines d'Expertise",
+    "description": "Découvrez l'ensemble de nos pôles d'accompagnement et de recrutement spécialisés, conçus pour sécuriser, optimiser et propulser votre entreprise."
+  },
+  "detailBlock": {
+    "title": "Prestations & Accompagnement",
+    "description": "Nos consultants interviennent de manière agile et ciblée pour répondre à vos problématiques de croissance, de sécurité ou de recrutement :",
+    "ctaText": "Solliciter ce pôle d'expertise"
+  },
+  "expertises": [
+    {
+      "id": "formations",
+      "titleLine1": "NEXYTAL",
+      "titleLine2": "FORMATIONS",
+      "contactPole": "Formations",
+      "externalUrl": "https://alt-rh.com/accueil",
+      "subtitle": "FORMATION PROFESSIONNELLE",
+      "year": "2026",
+      "description": "Programmes de montée en compétences pour vos équipes : management, outils digitaux, posture commerciale et efficacité opérationnelle.",
+      "detailTitle": "Formez vos équipes, propulsez votre performance",
+      "detailDescription": "Une équipe formée est une équipe qui gagne. Nos programmes sur-mesure transforment les compétences individuelles en leviers de croissance collective, avec un impact mesurable sur votre productivité et votre rétention des talents.",
+      "cardGradient": "linear-gradient(135deg, #7C3AED 0%, #A78BFA 100%)",
+      "image": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=900&q=80",
+      "features": [
+        "Plans de formation intra/inter-entreprise",
+        "Parcours certifiants adaptés aux métiers",
+        "Suivi des acquis et mesure d'impact",
+        "Formats présentiel, distanciel et hybride"
+      ]
+    },
+    {
+      "id": "rh",
+      "titleLine1": "NEXYTAL",
+      "titleLine2": "CARRIÈRE",
+      "contactPole": "RH",
+      "externalUrl": "https://nexytal-carriere.vercel.app/",
+      "subtitle": "RESSOURCES HUMAINES",
+      "year": "2026",
+      "description": "Structuration RH, marque employeur, pilotage des talents et accompagnement des transformations humaines.",
+      "detailTitle": "Structurez l'humain, libérez le potentiel",
+      "detailDescription": "De l'audit RH à la marque employeur, nous bâtissons avec vous les fondations qui attirent, retiennent et développent les meilleurs talents. Une fonction RH solide, c'est un avantage compétitif durable.",
+      "cardGradient": "linear-gradient(135deg, #F97316 0%, #FBBF24 100%)",
+      "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80",
+      "features": [
+        "Audit RH et organisation des équipes",
+        "Structuration des processus RH",
+        "Accompagnement marque employeur",
+        "Pilotage GPEC et fidélisation"
+      ]
+    },
+    {
+      "id": "coaching",
+      "titleLine1": "NEXYTAL",
+      "titleLine2": "COACHING",
+      "contactPole": "Coaching",
+      "externalUrl": "https://nexytal-coaching.vercel.app/",
+      "subtitle": "LEADERSHIP & PERFORMANCE",
+      "year": "2026",
+      "description": "Coaching individuel et collectif pour dirigeants, managers et équipes afin d'accélérer la performance durable.",
+      "detailTitle": "Révélez le leader qui sommeille en vous",
+      "detailDescription": "Nos coaches certifiés ICF vous accompagnent dans les moments charnières de votre carrière pour décupler votre impact, clarifier votre vision et fédérer vos équipes autour d'un cap commun.",
+      "cardGradient": "linear-gradient(135deg, #16A34A 0%, #4ADE80 100%)",
+      "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80",
+      "features": [
+        "Coaching de dirigeants et managers",
+        "Accompagnement des transitions",
+        "Développement du leadership",
+        "Amélioration de la performance d'équipe"
+      ]
+    },
+    {
+      "id": "medicale",
+      "titleLine1": "NEXYTAL",
+      "titleLine2": "MÉDICALE",
+      "contactPole": "Médicale",
+      "externalUrl": "https://nexytal-medical.vercel.app/",
+      "subtitle": "SANTÉ & MÉDICAL",
+      "year": "2026",
+      "description": "Accompagnement des structures de santé : organisation, recrutement spécialisé et amélioration continue des parcours.",
+      "detailTitle": "La performance au service de la santé",
+      "detailDescription": "Cliniques, hôpitaux, cabinets : nous aidons les structures de santé à optimiser leur organisation, recruter des profils rares et améliorer durablement la qualité des parcours patients, sans jamais perdre de vue l'humain.",
+      "cardGradient": "linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%)",
+      "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=900&q=80",
+      "features": [
+        "Conseil organisationnel santé",
+        "Recrutement profils médicaux",
+        "Optimisation parcours patients",
+        "Conformité et qualité des pratiques"
+      ]
+    },
+    {
+      "id": "trainer",
+      "titleLine1": "NEXYTAL",
+      "titleLine2": "TRAINERS",
+      "contactPole": "Trainer",
+      "externalUrl": "https://nexytal-trainers.vercel.app/",
+      "subtitle": "RECRUTEMENT DE FORMATEURS",
+      "description": "Sourcing et recrutement de formateurs experts, consultants pédagogiques et animateurs de formation pour renforcer vos équipes enseignantes.",
+      "detailTitle": "Les bons formateurs, au bon moment",
+      "detailDescription": "Un bon formateur ne s'improvise pas. Nous sourcions les experts pédagogiques qui maîtrisent à la fois leur domaine et l'art de transmettre — pour des formations qui marquent les esprits et changent les pratiques.",
+      "cardGradient": "linear-gradient(135deg, #E11D48 0%, #F87171 100%)",
+      "image": "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=600&q=80",
+      "features": [
+        "Ingénierie pédagogique sur-mesure",
+        "Animation de sessions opérationnelles",
+        "Évaluation continue des apprenants",
+        "Accompagnement des formateurs internes"
+      ]
+    },
+    {
+      "id": "recrutements",
+      "titleLine1": "NEXYTAL",
+      "titleLine2": "RECRUTEMENTS",
+      "contactPole": "Recrutements",
+      "externalUrl": "https://nexytal-recrutement.vercel.app/",
+      "subtitle": "RECRUTEMENT DE TALENTS",
+      "year": "2026",
+      "description": "Sourcing ciblé, évaluation approfondie et recrutement de profils clés pour renforcer vos équipes durablement.",
+      "detailTitle": "Recrutez juste, une fois, durablement",
+      "detailDescription": "Chaque recrutement raté coûte cher. Notre approche rigoureuse — sourcing multi-canal, évaluation comportementale et suivi post-intégration — garantit des recrutements alignés avec votre culture et vos ambitions.",
+      "cardGradient": "linear-gradient(135deg, #C2410C 0%, #F97316 100%)",
+      "image": "https://images.pexels.com/photos/5669619/pexels-photo-5669619.jpeg?auto=compress&cs=tinysrgb&w=900&q=80",
+      "features": [
+        "Sourcing ciblé multi-canal",
+        "Évaluation compétences et soft skills",
+        "Accompagnement managers recruteurs",
+        "Intégration et suivi post-recrutement"
+      ]
+    }
+  ],
+  "synergy": {
+    "title": "Une synergie d'expertises unique",
+    "description": "Parce que vos enjeux sont interconnectés, nos cabinets collaborent au quotidien. Un audit de cybersécurité s'accompagnera de la rédaction de vos chartes informatiques de conformité, tandis qu'un recrutement stratégique bénéficiera de l'audit de votre climat social.",
+    "buttonText": "Parler à un conseiller"
+  }
+}

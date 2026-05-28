@@ -1,0 +1,48 @@
+{
+  "slug": "evaluer-formateur",
+  "pole": "Trainers",
+  "type": "Guide",
+  "date": "Février 2026",
+  "title": "Checklist : évaluer un formateur avant intégration",
+  "description": "Une checklist complète pour évaluer les compétences pédagogiques, techniques et relationnelles d'un formateur avant de l'intégrer à votre équipe.",
+  "image": "https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+  "intro": "Recruter un formateur sans processus d'évaluation structuré, c'est prendre le risque de décevoir vos apprenants et d'exposer votre certification Qualiopi. NEXYTAL Trainers partage sa méthode d'évaluation en 4 dimensions, testée et affinée sur des centaines de missions de recrutement pédagogique.",
+  "sections": [
+    {
+      "heading": "Dimension 1 — Maîtrise de l'expertise métier",
+      "body": "La première dimension est la plus évidente mais aussi la plus souvent mal évaluée. L'expertise d'un formateur ne se vérifie pas sur CV — elle se teste. Méthodes recommandées : un entretien technique structuré avec des questions de mise en situation concrète (« Comment expliqueriez-vous ce concept à un débutant total ? »), une vérification des références professionnelles récentes (les expériences terrain doivent dater de moins de 3 ans), et la consultation de publications, interventions ou productions récentes. Attention à l'expert théorique : les meilleurs formateurs sont souvent ceux qui ont exercé le métier qu'ils enseignent.",
+      "image": "https://images.pexels.com/photos/3771097/pexels-photo-3771097.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "imageAlt": "Formateur expliquant un concept sur tableau blanc",
+      "quote": {
+        "text": "J'ai recruté des formateurs brillants sur le papier qui ne savaient pas répondre à une question imprévue des apprenants. L'expertise doit être vivante, actualisée, connectée au terrain réel.",
+        "author": "Directeur pédagogique, CFA régional"
+      }
+    },
+    {
+      "heading": "Dimension 2 — Ingénierie pédagogique",
+      "body": "Un expert n'est pas automatiquement un bon formateur. L'ingénierie pédagogique est une compétence distincte. Évaluez-la en demandant au candidat de présenter un module qu'il a conçu, en analysant la structure de ses supports (objectifs pédagogiques, activités d'apprentissage, modalités d'évaluation), et en lui soumettant un scenario de construction : « Vous avez 3 heures pour former 12 managers à la conduite d'entretien difficile. Décrivez votre séquence pédagogique. » Un bon formateur structurera sa réponse autour des objectifs, pas du contenu.",
+      "image": "https://images.pexels.com/photos/7375/startup-photos.jpg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "imageAlt": "Ingénierie pédagogique et conception de supports"
+    },
+    {
+      "heading": "Dimension 3 — Animation et gestion de groupe",
+      "body": "La mise en situation pédagogique est indispensable. Demandez au candidat d'animer 15 à 20 minutes sur un sujet de son choix, devant 3 à 5 observateurs. Évaluez : la clarté du fil directeur, la variété des techniques d'animation (exposé, questions, exercices, débat), la gestion de l'attention et de la participation, la capacité à reformuler les incompréhensions, et la réaction face à une question ou une remarque déstabilisante. La gestion des « apprenants difficiles » (celui qui monopolise, celui qui décroche, celui qui conteste) est souvent révélatrice du niveau de maturité pédagogique.",
+      "quote": {
+        "text": "La mise en situation de 15 minutes nous a évité plusieurs erreurs de casting. On a eu des candidats très bien à l'entretien qui s'effondrent devant un groupe — et l'inverse. C'est irremplaçable.",
+        "author": "Responsable de formation, grand compte du secteur bancaire"
+      }
+    },
+    {
+      "heading": "Dimension 4 — Posture professionnelle et éthique",
+      "body": "Souvent négligée, cette dimension est déterminante pour la durabilité de la relation. Évaluez : la ponctualité et le sérieux administratif (remise des évaluations, comptes rendus), la confidentialité (un formateur ne doit jamais citer des apprenants ou des clients en entretien), la capacité à recevoir du feedback sur ses animations, le respect du cadre pédagogique défini par l'organisme, et la cohérence entre posture en entretien et comportement en formation. Un formateur qui se survend en entretien et sous-livre en formation est votre risque réputationnel le plus concret."
+    }
+  ],
+  "keyPoints": [
+    "4 dimensions à évaluer : expertise métier, ingénierie pédagogique, animation, posture",
+    "Vérifiez les expériences terrain récentes — l'expertise doit dater de moins de 3 ans",
+    "Scénario de construction pédagogique : incontournable pour évaluer l'ingénierie",
+    "Mise en situation de 15-20 minutes : obligatoire avant tout recrutement",
+    "Demandez comment le candidat gère un apprenant difficile ou une question déstabilisante",
+    "Confidentialité et rigueur administrative : testez-les dès l'entretien de recrutement"
+  ]
+}

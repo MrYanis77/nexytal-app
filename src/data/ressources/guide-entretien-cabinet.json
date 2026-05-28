@@ -1,0 +1,48 @@
+{
+  "slug": "guide-entretien-cabinet",
+  "pole": "Recrutements",
+  "type": "Guide",
+  "date": "Avril 2026",
+  "title": "Se préparer à un entretien avec un cabinet de recrutement",
+  "description": "Guide candidat : ce que les consultants attendent vraiment, comment présenter son parcours et maximiser ses chances d'être présenté à l'entreprise cliente.",
+  "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+  "intro": "Un entretien avec un cabinet de recrutement n'est pas un entretien d'embauche classique. Le consultant sera votre ambassadeur : il doit pouvoir vous présenter avec précision et conviction. Ce guide, rédigé par les consultants NEXYTAL Recrutements, vous donne les clés pour tirer le meilleur de cette étape.",
+  "sections": [
+    {
+      "heading": "Comprendre le rôle du consultant et ce qu'il évalue",
+      "body": "Le consultant n'est pas un recruteur généraliste — c'est un intermédiaire stratégique. Il évalue votre potentiel de « vente » auprès des entreprises clientes. Concrètement, il cherche à répondre à 3 questions : Votre profil correspond-il aux postes pour lesquels je travaille actuellement ? Serez-vous capable de convaincre un DRH ou un manager en entretien client ? Peut-je défendre votre candidature avec confiance ? Son rôle est de vous comprendre profondément pour vous positionner correctement, pas de vous présenter partout dans l'espoir que ça colle quelque part.",
+      "image": "https://images.pexels.com/photos/5668772/pexels-photo-5668772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "imageAlt": "Entretien professionnel en bureau moderne",
+      "quote": {
+        "text": "Un candidat bien préparé à l'entretien cabinet me donne tout ce qu'il me faut en 30 minutes. Un candidat mal préparé me fait perdre 2 heures et je ne peux toujours pas le présenter avec confiance.",
+        "author": "Consultante senior, NEXYTAL Recrutements"
+      }
+    },
+    {
+      "heading": "Structurer son pitch en 3 minutes",
+      "body": "La première question que vous posera le consultant est : « Parlez-moi de vous. » Ne l'improvisez pas. Structurez votre réponse en 3 blocs : le parcours (qui je suis, mes expériences clés, en 60 secondes), les compétences distinctives (ce que je fais mieux que les autres dans mon domaine, en 60 secondes), et le projet professionnel (ce que je cherche maintenant et pourquoi, en 60 secondes). Entraînez-vous à voix haute. Le consultant doit pouvoir reprendre votre pitch mot pour mot devant un client. S'il ne peut pas, c'est que votre présentation manque de clarté.",
+      "image": "https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "imageAlt": "Candidat se préparant à un entretien professionnel"
+    },
+    {
+      "heading": "Les questions types d'un entretien cabinet",
+      "body": "Les consultants reviennent systématiquement sur plusieurs sujets : les motivations de départ (soyez honnête et positif — critiquer son employeur est rédhibitoire), les réalisations concrètes (chiffrez tout : « J'ai augmenté le chiffre d'affaires de X % » plutôt que « J'ai amélioré les résultats »), les critères de recherche (poste idéal, secteurs, management souhaité, mobilité géographique, rémunération), et la disponibilité. Sur la rémunération : donnez une fourchette cohérente avec votre marché. Demander un salaire hors marché sans argument solide vous disqualifie immédiatement.",
+      "quote": {
+        "text": "Les candidats qui viennent avec des chiffres — taux de réalisation, taille d'équipe, budget géré, résultats mesurables — sont ceux que je présente le plus vite. Les autres me donnent des généralités impossibles à valoriser.",
+        "author": "Consultant, NEXYTAL Recrutements"
+      }
+    },
+    {
+      "heading": "Entretenir la relation après l'entretien",
+      "body": "Un entretien cabinet sans suivi est un investissement gaspillé. Envoyez un email de remerciement dans les 24 heures avec une ou deux précisions sur votre projet — cela renforce votre mémorabilité. Relancez le consultant toutes les 3 à 4 semaines si vous n'avez pas de retour. Informez-le de toute évolution de votre situation (nouveau poste accepté, délai qui change, critères qui évoluent). Un consultant qui vous a en tête quand une opportunité se présente, c'est un accélérateur de carrière. Construisez cette relation dans la durée, pas seulement en période de recherche active."
+    }
+  ],
+  "keyPoints": [
+    "Le consultant est votre ambassadeur — donnez-lui les arguments pour vous défendre",
+    "Préparez votre pitch en 3 blocs de 60 secondes : parcours, compétences, projet",
+    "Chiffrez absolument toutes vos réalisations — les généralités ne se vendent pas",
+    "Donnez une fourchette salariale réaliste : demander hors marché vous disqualifie",
+    "Relancez le consultant toutes les 3-4 semaines — sans être intrusif",
+    "Maintenez la relation dans la durée, pas seulement en période de recherche active"
+  ]
+}

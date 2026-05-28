@@ -1,0 +1,48 @@
+{
+  "slug": "leadership-transformation",
+  "pole": "Coaching",
+  "type": "Guide",
+  "date": "Février 2026",
+  "title": "Développer son leadership en période de transformation",
+  "description": "Guide pratique pour managers et dirigeants : comment maintenir l'engagement de ses équipes et prendre des décisions claires dans l'incertitude.",
+  "image": "https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+  "intro": "Les périodes de transformation — fusion, restructuration, pivot stratégique, crise — testent la solidité du leadership. Ce guide s'appuie sur 200 accompagnements de managers et dirigeants réalisés par NEXYTAL Coaching pour identifier les postures et comportements qui font la différence.",
+  "sections": [
+    {
+      "heading": "Les 4 dimensions du leadership en transformation",
+      "body": "Le leadership efficace en période de changement repose sur quatre dimensions interdépendantes. La vision : être capable d'articuler clairement le cap même quand on ne voit pas encore l'horizon. La confiance : maintenir un lien de sécurité psychologique avec ses équipes malgré l'incertitude. La décision : agir avec les informations disponibles sans attendre la certitude absolue. La communication : partager régulièrement, avec sincérité, même quand on n'a pas de réponse à toutes les questions.",
+      "image": "https://images.pexels.com/photos/1181435/pexels-photo-1181435.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "imageAlt": "Leader devant son équipe lors d'une réunion de transformation",
+      "quote": {
+        "text": "En transformation, les équipes ne demandent pas à leur manager d'avoir toutes les réponses. Elles lui demandent d'être présent, honnête et cohérent entre ce qu'il dit et ce qu'il fait.",
+        "author": "Coach certifiée, NEXYTAL Coaching"
+      }
+    },
+    {
+      "heading": "Maintenir l'engagement quand l'incertitude est maximale",
+      "body": "L'incertitude est le principal ennemi de l'engagement. Quand les collaborateurs ne savent pas où l'organisation va, leur cerveau comble les zones grises par des scénarios catastrophistes. Le rôle du manager est de réduire ce vide informationnel, même partiellement. Trois pratiques concrètes font la différence : les points d'équipe hebdomadaires courts et structurés, la pratique de la transparence calibrée (partager ce qu'on peut partager, expliquer pourquoi on ne peut pas partager le reste), et la célébration des micro-victoires pour ancrer un sentiment de progrès.",
+      "image": "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "imageAlt": "Équipe en briefing matinal debout"
+    },
+    {
+      "heading": "Gérer ses propres émotions pour rester un repère",
+      "body": "Un manager en transformation est lui-même soumis à une charge émotionnelle intense. La recherche en neurosciences montre que les émotions sont contagieuses — si le manager est anxieux, son équipe le sera. La régulation émotionnelle n'est pas une qualité innée : elle s'acquiert. Trois pratiques simples et prouvées : la respiration cohérente cardiaque (5 minutes par jour réduit le cortisol de 23 %), la tenue d'un journal de bord émotionnel quotidien, et l'identification préalable de ses déclencheurs de réactivité pour éviter les décisions à chaud.",
+      "quote": {
+        "text": "Un manager qui sait identifier sa colère ou son anxiété avant de réagir évite en moyenne 3 erreurs relationnelles par semaine avec ses équipes. C'est considérable sur une année.",
+        "author": "Coach certifié en gestion émotionnelle, NEXYTAL Coaching"
+      }
+    },
+    {
+      "heading": "Plan d'action : 90 jours pour renforcer son leadership",
+      "body": "Mois 1 — Diagnostic : réalisez une auto-évaluation sur les 4 dimensions (vision, confiance, décision, communication), partagez-la avec 3 personnes de confiance pour recueillir leurs perceptions. Mois 2 — Expérimentation : choisissez une pratique par dimension et appliquez-la de façon systématique, notez les réactions de vos équipes. Mois 3 — Ancrage : faites le bilan avec un pair ou un coach, consolidez les pratiques qui ont produit des résultats et ajustez les autres. Répétez le cycle trimestriellement."
+    }
+  ],
+  "keyPoints": [
+    "4 dimensions clés : vision, confiance, décision, communication — travaillez-les ensemble",
+    "La transparence calibrée réduit les rumeurs et maintient la confiance",
+    "Briefings hebdomadaires structurés : le levier n°1 de l'engagement en transformation",
+    "La régulation émotionnelle du manager est contagieuse — positivement ou négativement",
+    "Plan d'action en 3 mois : diagnostic, expérimentation, ancrage",
+    "Célébrez les micro-victoires pour ancrer un sentiment de progrès collectif"
+  ]
+}

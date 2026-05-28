@@ -1,0 +1,48 @@
+{
+  "slug": "recruter-profil-medical",
+  "pole": "Médicale",
+  "type": "Guide",
+  "date": "Mars 2026",
+  "title": "Fiche pratique : recruter un médecin ou un paramédical",
+  "description": "Les étapes clés, les canaux efficaces et les erreurs à éviter pour réussir un recrutement médical ou paramédical.",
+  "image": "https://images.pexels.com/photos/7089401/pexels-photo-7089401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+  "intro": "Recruter un professionnel de santé ne s'improvise pas. La réglementation spécifique au secteur, les contraintes ordinales, les attentes particulières des candidats médicaux et la concurrence accrue entre employeurs exigent une approche structurée et différenciante. Mode d'emploi pas à pas.",
+  "sections": [
+    {
+      "heading": "Définir précisément le profil avant de recruter",
+      "body": "Un recrutement médical mal cadré est voué à l'échec. Avant de lancer toute démarche, clarifiez : le type de contrat souhaité (libéral, salarié, mixte ?), la quotité de temps de travail et les horaires réels (gardes, astreintes, week-ends), les actes techniques requis et les équipements disponibles, le niveau d'autonomie attendu et les protocoles de collaboration avec les autres professionnels, et enfin les perspectives d'évolution à 3-5 ans. Ces éléments doivent figurer dans une fiche de poste complète — et non dans une simple annonce.",
+      "image": "https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "imageAlt": "Directeur RH médical rédigeant une fiche de poste",
+      "quote": {
+        "text": "Nous avons pris le temps de passer 2 jours avec l'équipe soignante pour construire la fiche de poste. Le résultat : un recrutement bouclé en 11 semaines là où nous avions échoué 3 fois en 2 ans.",
+        "author": "Directrice des soins, hôpital privé de la région Grand-Est"
+      }
+    },
+    {
+      "heading": "Les canaux de sourcing efficaces selon le profil",
+      "body": "Toutes les plateformes ne se valent pas selon le profil recherché. Pour les médecins : les réseaux ordinaux (Ordre des médecins), les groupes spécialisés LinkedIn par spécialité, les annuaires de remplaçants et les cabinets spécialisés comme NEXYTAL Médicale. Pour les infirmiers et aides-soignants : les IFSI locaux, les plateformes dédiées (HippoConsult, MedApp), les partenariats avec les écoles de formation. Pour les directeurs d'établissements : l'approche directe est souvent la seule option viable. Les plateformes généralistes (Indeed, Pôle Emploi) sont peu adaptées aux profils médicaux spécialisés.",
+      "image": "https://images.pexels.com/photos/3846022/pexels-photo-3846022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "imageAlt": "Équipe RH médicale lors d'un entretien de recrutement"
+    },
+    {
+      "heading": "Les obligations réglementaires à ne pas négliger",
+      "body": "Tout recrutement médical implique des vérifications réglementaires obligatoires : inscription en cours de validité à l'Ordre professionnel (médecins, infirmiers, kinés, etc.), vérification de l'absence de suspension ou de radiation ordinale, reconnaissance de diplôme pour les praticiens diplômés hors UE (procédure PAE ou concours de praticien), et vérification du casier judiciaire pour les postes en contact avec des mineurs ou des personnes vulnérables. Ces contrôles doivent être réalisés avant toute signature de contrat.",
+      "quote": {
+        "text": "Nous avons failli recruter un praticien dont l'inscription ordinale était suspendue. C'est le cabinet de recrutement qui l'a détecté. Sans cette vérification, nous aurions été exposés à une responsabilité pénale.",
+        "author": "Directeur administratif, réseau de cliniques"
+      }
+    },
+    {
+      "heading": "Réussir l'intégration pour éviter le départ précoce",
+      "body": "Un tiers des recrutements médicaux se soldent par un départ dans les 6 premiers mois — souvent par défaut d'intégration. Les bonnes pratiques des établissements avec les meilleurs taux de rétention : un parrain ou tuteur désigné dès l'arrivée, un parcours d'intégration structuré sur 30, 60 et 90 jours, une rencontre formelle avec la direction médicale dans les 15 premiers jours, et une évaluation à 3 mois avec feedback bidirectionnel. L'intégration n'est pas une formalité administrative : c'est le début de la fidélisation."
+    }
+  ],
+  "keyPoints": [
+    "Fiche de poste détaillée : contrat, horaires réels, actes techniques, perspectives d'évolution",
+    "Médecins : réseaux ordinaux et approche directe sont les canaux les plus efficaces",
+    "Vérifiez toujours l'inscription ordinale ET l'absence de suspension avant signature",
+    "Praticiens hors UE : procédure PAE ou concours de praticien obligatoire",
+    "1/3 des recrutements médicaux = départ dans les 6 mois faute d'intégration",
+    "Tuteur désigné + évaluation à 3 mois : les deux piliers d'une intégration réussie"
+  ]
+}

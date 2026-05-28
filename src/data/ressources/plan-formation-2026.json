@@ -1,0 +1,54 @@
+{
+  "slug": "plan-formation-2026",
+  "pole": "Formations",
+  "type": "Guide",
+  "date": "Mai 2026",
+  "title": "Construire un plan de formation 2026",
+  "description": "Guide complet pour structurer, financer et piloter votre plan de développement des compétences en 2026.",
+  "image": "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+  "intro": "Le plan de formation est devenu un levier stratégique incontournable. En 2026, les nouvelles obligations légales et les évolutions du marché imposent une refonte profonde des approches traditionnelles. Ce guide vous accompagne pas à pas dans la construction d'un plan de formation efficace, depuis l'analyse des besoins jusqu'au bilan annuel.",
+  "sections": [
+    {
+      "heading": "Pourquoi le plan de formation est plus stratégique que jamais",
+      "body": "Dans un contexte de transformation accélérée des métiers, les entreprises qui investissent dans la montée en compétences de leurs équipes affichent une performance supérieure de 37 % par rapport à celles qui négligent la formation. L'intelligence artificielle, la transition numérique et les évolutions réglementaires créent de nouveaux besoins auxquels il est impossible de répondre en improvisant. Un plan de formation structuré n'est plus un « nice to have » : c'est un pilier de votre stratégie RH.",
+      "image": "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "imageAlt": "Équipe en réunion stratégique de formation",
+      "quote": {
+        "text": "Les entreprises qui forment leurs équipes chaque année réduisent leur turnover de 24 % et améliorent leur taux d'engagement de 31 %.",
+        "author": "Observatoire des Métiers, 2025"
+      }
+    },
+    {
+      "heading": "Étape 1 — Diagnostiquer les compétences existantes",
+      "body": "Avant de commander des formations, il faut savoir où vous en êtes. Un diagnostic des compétences se réalise à trois niveaux : l'organisation (quelles compétences collectives manquent pour atteindre les objectifs stratégiques ?), le métier (quelles évolutions techniques ou réglementaires impactent chaque fonction ?) et l'individu (quels besoins exprimés lors des entretiens annuels ?). Croisez les résultats des entretiens professionnels, des évaluations de performance et des retours managériaux pour obtenir une cartographie précise.",
+      "image": "https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "imageAlt": "Analyse de données RH sur tableau blanc"
+    },
+    {
+      "heading": "Étape 2 — Prioriser et budgéter",
+      "body": "Une fois les besoins identifiés, il faut choisir. Vous ne pourrez pas tout financer. Classer les formations selon trois critères : l'urgence (besoin immédiat pour un projet en cours), l'impact (nombre de collaborateurs concernés et effet sur la performance) et la faisabilité (disponibilité des équipes, offre de formation existante). Construisez ensuite votre budget en distinguant les financements internes (ligne formation du plan de développement) et les financements externes (OPCO, CPF, FNE).",
+      "quote": {
+        "text": "Un budget formation bien calibré représente entre 1,5 % et 3 % de la masse salariale selon les secteurs. En-deçà, l'impact est insuffisant. Au-delà, les équipes manquent de temps présentiel pour assimiler.",
+        "author": "Consultant NEXYTAL Formations"
+      }
+    },
+    {
+      "heading": "Étape 3 — Sélectionner les bons organismes",
+      "body": "Depuis l'obligation de certification Qualiopi, le marché de la formation s'est structuré. Mais la certification ne garantit pas la qualité pédagogique. Vérifiez systématiquement : les références clients dans votre secteur, la mise à jour des contenus (une formation sur l'IA datant de 2022 est déjà obsolète), la flexibilité des formats (présentiel, distanciel, blended), les modalités d'évaluation des apprentissages et le service après formation (suivi des acquis à J+90). N'hésitez pas à demander une session découverte avant tout achat.",
+      "image": "https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "imageAlt": "Réunion de sélection de prestataire formation"
+    },
+    {
+      "heading": "Étape 4 — Mesurer le retour sur investissement",
+      "body": "Trop d'entreprises ne mesurent jamais l'impact réel de leurs formations. Le modèle Kirkpatrick en 4 niveaux reste la référence : réaction (satisfaction à chaud), apprentissage (acquis testés en fin de formation), comportement (mise en pratique observée 30 à 90 jours après), résultats (impact mesurable sur la performance). Définissez dès la commande les indicateurs de succès. Un KPI simple : combien de collaborateurs ont appliqué au moins une nouveauté issue de la formation dans les 60 jours suivants ?"
+    }
+  ],
+  "keyPoints": [
+    "Démarrez le diagnostic en croisant entretiens annuels, évaluations et retours managériaux",
+    "Priorisez selon l'urgence, l'impact et la faisabilité — pas uniquement selon les demandes individuelles",
+    "Vérifiez la certification Qualiopi ET la qualité pédagogique réelle",
+    "Optimisez les financements OPCO avant le 31 mars pour les plans de l'année N-1",
+    "Définissez des indicateurs de ROI avant de commander — pas après",
+    "Intégrez les formats micro-learning et blended pour des équipes en mobilité"
+  ]
+}

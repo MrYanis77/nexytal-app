@@ -1,0 +1,48 @@
+{
+  "slug": "financement-cpf-opco",
+  "pole": "Formations",
+  "type": "Webinar",
+  "date": "Avril 2026",
+  "title": "CPF, OPCO et financements : ce qui change en 2026",
+  "description": "Décryptage des nouvelles règles de financement de la formation professionnelle et comment en tirer le meilleur parti pour votre entreprise.",
+  "image": "https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+  "intro": "Le paysage du financement de la formation a radicalement changé en 2026. Nouvelles règles CPF, réformes des OPCO, fonds sectoriels inédits : naviguer dans cet écosystème sans guide revient à laisser des milliers d'euros sur la table. Replay de notre webinar exclusif avec les points essentiels à connaître.",
+  "sections": [
+    {
+      "heading": "Le CPF en 2026 : recentrage sur les priorités nationales",
+      "body": "Depuis la réforme d'octobre 2025, le Compte Personnel de Formation a été recentré sur les formations certifiantes et les compétences prioritaires définies par France Compétences : numérique, transition écologique, compétences managériales et langues. Les formations courtes sans certification ont été exclues du catalogue CPF. Pour les employeurs, cela change le rôle de l'abondement : il devient un levier d'attractivité puissant pour financer des parcours qualifiants que les salariés ne pourraient plus autofinancer seuls.",
+      "image": "https://images.pexels.com/photos/5989933/pexels-photo-5989933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "imageAlt": "Formation en ligne sur ordinateur portable",
+      "quote": {
+        "text": "L'abondement CPF employeur est devenu un avantage concurrentiel réel dans les négociations salariales. Nous le proposons désormais dans nos packages de rémunération globale.",
+        "author": "DRH, ETI industrielle de 450 salariés"
+      }
+    },
+    {
+      "heading": "Les OPCO en 2026 : ce qui change par secteur",
+      "body": "Les Opérateurs de Compétences ont revu leurs critères d'intervention en 2026. Les plafonds de prise en charge ont été ajustés à la hausse pour les TPE/PME (moins de 50 salariés), notamment sur les formations Qualiopi en présentiel. En revanche, les délais de remboursement se sont allongés pour les grandes entreprises. Point crucial : les OPCO exigent désormais une convention de formation signée avant le début de l'action, et non plus après. Vérifiez vos pratiques de gestion administrative.",
+      "image": "https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "imageAlt": "Documents administratifs de financement formation"
+    },
+    {
+      "heading": "FNE-Formation : les nouvelles conditions d'éligibilité",
+      "body": "Le Fonds National de l'Emploi a été reconduit avec un ciblage plus strict. En 2026, sont prioritaires : les entreprises en transformation industrielle ou numérique documentée, les salariés dont le poste est susceptible d'évoluer dans les 24 mois, et les entreprises de moins de 300 salariés. Le dossier de demande exige désormais un plan de GPEC ou de GEPP actualisé. Les entreprises ayant bénéficié du FNE en 2024 doivent présenter un bilan d'impact avant toute nouvelle demande.",
+      "quote": {
+        "text": "Nous avons obtenu 38 000 € de financement FNE pour former 22 techniciens à l'automatisation. Sans ce fonds, nous aurions dû échelonner sur 3 ans ce que nous avons fait en 8 mois.",
+        "author": "Responsable formation, PME industrielle en Île-de-France"
+      }
+    },
+    {
+      "heading": "Stratégie : comment optimiser son mix de financement",
+      "body": "Les entreprises les plus efficaces ne s'appuient pas sur une seule source. La stratégie optimale combine : l'OPCO pour les formations métiers courantes, le CPF avec abondement pour les parcours certifiants individuels, le FNE pour les grandes transformations collectives, et les fonds mutualisés sectoriels pour les petites structures. Un responsable formation efficace construit un tableau de bord de ses financements dès janvier pour ne pas rater les fenêtres de dépôt."
+    }
+  ],
+  "keyPoints": [
+    "CPF 2026 : uniquement certifications et compétences prioritaires nationales",
+    "L'abondement employeur devient un argument RH différenciant",
+    "Convention de formation OPCO obligatoirement signée AVANT démarrage",
+    "FNE : dossier plus exigeant, préparez votre GEPP et votre bilan impact",
+    "PME de moins de 50 salariés : plafonds OPCO augmentés en 2026",
+    "Construisez votre tableau de bord financement dès janvier de chaque année"
+  ]
+}

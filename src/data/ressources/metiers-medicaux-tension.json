@@ -1,0 +1,48 @@
+{
+  "slug": "metiers-medicaux-tension",
+  "pole": "Médical",
+  "type": "Étude",
+  "date": "Avril 2026",
+  "title": "Métiers médicaux en tension 2026",
+  "description": "Analyse des spécialités médicales et paramédicales les plus difficiles à recruter en France, avec cartographie régionale et recommandations.",
+  "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+  "intro": "La pénurie de professionnels de santé s'intensifie en 2026. Délais de recrutement record, déserts médicaux qui s'élargissent, concurrence exacerbée entre établissements : cette étude NEXYTAL Médicale cartographie les déséquilibres actuels et propose des stratégies concrètes d'attractivité.",
+  "sections": [
+    {
+      "heading": "Un marché sous tension structurelle",
+      "body": "En 2026, la France compte 87 médecins pour 100 000 habitants dans les zones rurales, contre 198 dans les métropoles. Cette inégalité s'aggrave depuis 10 ans malgré la fin du numerus clausus en 2020 — les effets de cette réforme ne se feront sentir qu'à partir de 2028-2030. Dans l'intervalle, les établissements de santé, les cliniques et les groupes médicaux se disputent un vivier de candidats qui se réduit chaque année. Les délais moyens de recrutement pour un médecin spécialiste dépassent désormais 6 mois dans 78 % des cas.",
+      "image": "https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "imageAlt": "Médecin en consultation avec une patiente",
+      "quote": {
+        "text": "Nous avons ouvert un poste de médecin du travail en septembre 2025. Après 7 mois de recherche, nous avons dû nous résoudre à externaliser la mission. Le vivier est quasiment à sec.",
+        "author": "DRH, groupe industriel de 4 500 salariés en Bretagne"
+      }
+    },
+    {
+      "heading": "Top 5 des spécialités les plus en tension",
+      "body": "La médecine du travail arrive en tête avec un ratio candidats/postes de 1 pour 8. Les médecins généralistes en zones rurales affichent un délai moyen de recrutement de 8,5 mois. Les infirmiers de nuit et de week-end restent introuvables dans 63 % des établissements. Les kinésithérapeutes libéraux sont en situation de quasi-plein emploi dans 11 des 13 régions. Enfin, les directeurs d'EHPAD et directeurs des soins font face à une vague de départs en retraite non anticipés, laissant des postes vacants plusieurs mois.",
+      "image": "https://images.pexels.com/photos/3279197/pexels-photo-3279197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "imageAlt": "Infirmiers en discussion dans un couloir hospitalier"
+    },
+    {
+      "heading": "Les leviers d'attractivité qui font vraiment la différence",
+      "body": "Face à ces pénuries, les établissements qui réussissent à recruter partagent des caractéristiques communes. Ils proposent des packages différenciants : logement de fonction ou aide au déménagement, équipement numérique dernier cri, temps de formation intégré au contrat. Ils communiquent sur leur projet médical avec une vision claire sur 5 ans. Ils investissent dans la qualité de vie au travail : repos compensateurs respectés, staffing suffisant, management participatif. Enfin, ils s'appuient sur des cabinets spécialisés comme NEXYTAL Médicale pour accéder à des viviers de candidats qualifiés hors des plateformes généralistes.",
+      "quote": {
+        "text": "Ce qui a fait la différence pour attirer notre cardiologue, c'est notre projet de télémédecine et notre plateau technique récent. La rémunération était dans la norme — c'est le projet qui a convaincu.",
+        "author": "Directeur médical, clinique privée en Occitanie"
+      }
+    },
+    {
+      "heading": "Télémédecine et nouvelles pratiques : une réponse partielle",
+      "body": "La télémédecine a progressé de 340 % en volume de consultations entre 2020 et 2025. Elle permet de couvrir partiellement les zones sous-dotées pour certaines spécialités (psychiatrie, dermatologie, gériatrie), mais ne peut pas se substituer à la présence physique pour les actes techniques. Pour les établissements, elle représente plutôt un complément d'attractivité — des médecins acceptent des postes en zone rurale s'ils peuvent maintenir une activité de téléconsultation partielle depuis leur domicile. C'est une donnée nouvelle dans les négociations contractuelles."
+    }
+  ],
+  "keyPoints": [
+    "87 médecins pour 100 000 habitants en rural vs 198 en métropole — un écart qui s'aggrave",
+    "Délai moyen de recrutement d'un spécialiste : plus de 6 mois dans 78 % des cas",
+    "Médecine du travail : ratio candidats/postes de 1 pour 8",
+    "Aide au logement et projet médical clair : les leviers d'attractivité les plus efficaces",
+    "La télémédecine est un complément, non un substitut à la présence physique",
+    "Recourir à un cabinet spécialisé réduit le délai de recrutement de 40 % en moyenne"
+  ]
+}

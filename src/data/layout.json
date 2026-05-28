@@ -1,0 +1,89 @@
+{
+  "topBar": {
+    "brand": "Groupe NEXYTAL",
+    "tagline": "Conseil, Recrutement & Accompagnement Stratégique",
+    "phoneDisplay": "01 60 43 94 30",
+    "phoneHref": "tel:+33160439430"
+  },
+  "navigation": {
+    "links": [
+      { "name": "Accueil", "path": "/" },
+      { "name": "Le groupe", "path": "/groupe" },
+      { "name": "Domaine d'expertise", "path": "/expertises" },
+      { "name": "Ressources", "path": "/ressources" },
+      { "name": "Implantation", "path": "/implantation" },
+      { "name": "Contact", "path": "/contact" }
+    ],
+    "ctaText": "Nous contacter",
+    "resourcesMenu": {
+      "columns": [
+        {
+          "title": "Formations & RH",
+          "items": [
+            { "label": "Construire un plan de formation 2026", "path": "/ressources/plan-formation-2026" },
+            { "label": "CPF, OPCO et financements : ce qui change", "path": "/ressources/financement-cpf-opco" },
+            { "label": "Étude de rémunération 2026", "path": "/ressources/etude-remuneration-2026" },
+            { "label": "Baromètre RH 2026", "path": "/ressources/barometre-rh-2026" }
+          ]
+        },
+        {
+          "title": "Coaching & Médical",
+          "items": [
+            { "label": "Coaching de dirigeants : quand et pourquoi ?", "path": "/ressources/coaching-dirigeants" },
+            { "label": "Développer son leadership en transformation", "path": "/ressources/leadership-transformation" },
+            { "label": "Métiers médicaux en tension 2026", "path": "/ressources/metiers-medicaux-tension" },
+            { "label": "Recruter un médecin ou un paramédical", "path": "/ressources/recruter-profil-medical" }
+          ]
+        },
+        {
+          "title": "Trainers & Recrutements",
+          "items": [
+            { "label": "Sourcer un formateur expert", "path": "/ressources/sourcer-formateur-expert" },
+            { "label": "Checklist : évaluer un formateur", "path": "/ressources/evaluer-formateur" },
+            { "label": "Se préparer à un entretien cabinet", "path": "/ressources/guide-entretien-cabinet" },
+            { "label": "Les erreurs de recrutement coûteuses", "path": "/ressources/erreurs-recrutement" }
+          ]
+        }
+      ],
+      "ctaButtons": []
+    }
+  },
+  "footer": {
+    "logoSubline": "NEXYTAL Groupe National",
+    "description": "NEXYTAL Groupe accompagne les entreprises et les professionnels à travers ses pôles d'expertises nationaux en Conseil RH, Recrutement, Cybersécurité, Intelligence Artificielle, Accompagnement Juridique, Fiscalité et Santé.",
+    "expertisesTitle": "Nos Domaines d'Expertise",
+    "expertisesLinks": [
+      { "label": "NEXYTAL Formations", "path": "/expertises#formations", "icon": "Brain", "iconClass": "text-purple-400" },
+      { "label": "NEXYTAL Carrière", "path": "/expertises#rh", "icon": "Users", "iconClass": "text-amber-400" },
+      { "label": "NEXYTAL Coaching", "path": "/expertises#coaching", "icon": "Brain", "iconClass": "text-emerald-400" },
+      { "label": "NEXYTAL Médicale", "path": "/expertises#medicale", "icon": "HeartPulse", "iconClass": "text-rose-400" },
+      { "label": "NEXYTAL Trainers", "path": "/expertises#trainer", "icon": "Users", "iconClass": "text-sky-400" },
+      { "label": "NEXYTAL Recrutements", "path": "/expertises#recrutements", "icon": "Scale", "iconClass": "text-indigo-400" }
+    ],
+    "resourcesTitle": "Ressources Utiles",
+    "resourcesLinks": [
+      { "label": "Construire un plan de formation 2026", "path": "/ressources/plan-formation-2026" },
+      { "label": "Étude de rémunération 2026", "path": "/ressources/etude-remuneration-2026" },
+      { "label": "Baromètre RH 2026", "path": "/ressources/barometre-rh-2026" },
+      { "label": "Coaching de dirigeants : quand et pourquoi ?", "path": "/ressources/coaching-dirigeants" },
+      { "label": "Métiers médicaux en tension 2026", "path": "/ressources/metiers-medicaux-tension" },
+      { "label": "Les erreurs de recrutement coûteuses", "path": "/ressources/erreurs-recrutement" }
+    ],
+    "contactTitle": "Siège Social",
+    "companyName": "NEXYTAL Groupe SAS",
+    "addressLine1": "4 Bd Michaēl Faraday",
+    "addressLine2": "77700 Serris, France",
+    "phoneLabel": "Tél :",
+    "phoneDisplay": "01 60 43 94 30",
+    "phoneHref": "tel:+33160439430",
+    "emailLabel": "Email :",
+    "emailDisplay": "contact@nexytal.com",
+    "emailHref": "mailto:contact@nexytal.com",
+    "legalLinks": [
+      { "label": "Mentions légales", "href": "/mentions-legales" },
+      { "label": "Confidentialité", "href": "/confidentialite" },
+      { "label": "CGU", "href": "/conditions-generales" }
+    ],
+    "copyrightSuffix": "NEXYTAL Groupe. Tous droits réservés."
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "header": {
+    "badge": "Contact",
+    "title": "Contactez NEXYTAL Groupe",
+    "description": "Une question ? Un projet de recrutement ou d'accompagnement ? Nos équipes de consultants régionaux sont à votre entière disposition."
+  },
+  "form": {
+    "nameLabel": "Nom complet *",
+    "namePlaceholder": "Jean Dupont",
+    "emailLabel": "Adresse email *",
+    "emailPlaceholder": "jean.dupont@entreprise.com",
+    "phoneLabel": "Téléphone",
+    "phonePlaceholder": "+33 (0)6 12 34 56 78",
+    "companyLabel": "Entreprise / Organisation",
+    "companyPlaceholder": "Ma Société SAS",
+    "poleLabel": "Pôle d'intérêt principal",
+    "poleOptions": [
+      { "value": "Formations", "label": "NEXYTAL Formations" },
+      { "value": "RH", "label": "NEXYTAL RH" },
+      { "value": "Coaching", "label": "NEXYTAL Coaching" },
+      { "value": "Médicale", "label": "NEXYTAL Médicale" },
+      { "value": "Trainer", "label": "NEXYTAL Trainer" },
+      { "value": "Recrutements", "label": "NEXYTAL Recrutements" }
+    ],
+    "messageLabel": "Votre message *",
+    "messagePlaceholder": "Décrivez brièvement votre projet ou votre demande...",
+    "submitButtonText": "Envoyer ma demande",
+    "submitValidationError": "Veuillez remplir tous les champs obligatoires (*).",
+    "submitSuccessTitle": "Votre message a été envoyé avec succès !",
+    "submitSuccessDescription": "Un conseiller de NEXYTAL Groupe vous recontactera sous 24 heures.",
+    "successCardTitle": "Merci pour votre message !",
+    "successCardDescriptionPrefix": "Votre demande a bien été transmise à notre équipe. Un conseiller spécialisé du pôle NEXYTAL",
+    "successCardDescriptionSuffix": "prendra contact avec vous sous 24 heures (jours ouvrés).",
+    "resetButtonText": "Envoyer un autre message"
+  },
+  "details": {
+    "label": "Nos Coordonnées",
+    "title": "Restons en contact",
+    "description": "Que vous soyez une entreprise cherchant à recruter ses futurs cadres dirigeants, un établissement de santé en quête d'audit organisationnel ou un dirigeant souhaitant sécuriser ses infrastructures numériques, nous avons une réponse adaptée.",
+    "addressTitle": "Siège Social",
+    "companyName": "NEXYTAL Groupe SAS",
+    "addressLine": "4 Bd Michaēl Faraday, 77700 Serris, France",
+    "phoneTitle": "Téléphone",
+    "phoneDisplay": "01 60 43 94 30",
+    "phoneHref": "tel:+33160439430",
+    "phoneMeta": "Appel non surtaxé, Lun - Ven : 8h30 - 18h30",
+    "emailTitle": "Email",
+    "emailDisplay": "contact@nexytal.com",
+    "emailHref": "mailto:contact@nexytal.com"
+  },
+  "supportBox": {
+    "label": "Support Réactif",
+    "title": "Garantie de réponse sous 24h",
+    "description": "Toutes les demandes formulées via ce formulaire sont automatiquement routées vers le directeur du pôle concerné pour vous garantir une réponse rapide et hautement qualifiée."
+  }
+}

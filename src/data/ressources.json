@@ -1,0 +1,139 @@
+{
+  "header": {
+    "badge": "RESSOURCES",
+    "title": "Ressources & Actualités",
+    "description": "Études, guides pratiques, interviews et webinars pour anticiper les tendances et renforcer vos pratiques RH, formation et recrutement."
+  },
+  "poles": [
+    "Tous",
+    "Formations",
+    "RH",
+    "Coaching",
+    "Médicale",
+    "Trainers",
+    "Recrutements"
+  ],
+  "types": ["Guide", "Étude", "Interview", "Webinar"],
+  "ressources": [
+    {
+      "slug": "plan-formation-2026",
+      "pole": "Formations",
+      "type": "Guide",
+      "date": "Mai 2026",
+      "title": "Construire un plan de formation 2026",
+      "description": "Guide complet pour structurer, financer et piloter votre plan de développement des compétences en 2026.",
+      "image": "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800&q=80",
+      "path": "/ressources/plan-formation-2026"
+    },
+    {
+      "slug": "financement-cpf-opco",
+      "pole": "Formations",
+      "type": "Webinar",
+      "date": "Avril 2026",
+      "title": "CPF, OPCO et financements : ce qui change en 2026",
+      "description": "Décryptage des nouvelles règles de financement de la formation professionnelle et comment en tirer le meilleur parti.",
+      "image": "https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=800&q=80",
+      "path": "/ressources/financement-cpf-opco"
+    },
+    {
+      "slug": "etude-remuneration-2026",
+      "pole": "RH",
+      "type": "Étude",
+      "date": "Mai 2026",
+      "title": "Étude de rémunération 2026 — tous secteurs",
+      "description": "Panorama complet des niveaux de rémunération par fonction, secteur et région.",
+      "image": "https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg?auto=compress&cs=tinysrgb&w=800&q=80",
+      "path": "/ressources/etude-remuneration-2026"
+    },
+    {
+      "slug": "barometre-rh-2026",
+      "pole": "RH",
+      "type": "Étude",
+      "date": "Avril 2026",
+      "title": "Baromètre RH 2026 : fidélisation et hybridation",
+      "description": "Les grandes tendances RH qui façonnent le travail en 2026 : hybridation, fidélisation des talents, nouvelles attentes managériales.",
+      "image": "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800&q=80",
+      "path": "/ressources/barometre-rh-2026"
+    },
+    {
+      "slug": "coaching-dirigeants",
+      "pole": "Coaching",
+      "type": "Interview",
+      "date": "Mars 2026",
+      "title": "Coaching de dirigeants : quand et pourquoi ?",
+      "description": "Interview croisée de deux coaches certifiés NEXYTAL sur les situations qui déclenchent un accompagnement et les résultats observés.",
+      "image": "https://images.pexels.com/photos/5673488/pexels-photo-5673488.jpeg?auto=compress&cs=tinysrgb&w=800&q=80",
+      "path": "/ressources/coaching-dirigeants"
+    },
+    {
+      "slug": "leadership-transformation",
+      "pole": "Coaching",
+      "type": "Guide",
+      "date": "Février 2026",
+      "title": "Développer son leadership en période de transformation",
+      "description": "Guide pratique pour managers et dirigeants : comment maintenir l'engagement de ses équipes dans l'incertitude.",
+      "image": "https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=800&q=80",
+      "path": "/ressources/leadership-transformation"
+    },
+    {
+      "slug": "metiers-medicaux-tension",
+      "pole": "Médicale",
+      "type": "Étude",
+      "date": "Avril 2026",
+      "title": "Métiers médicaux en tension 2026",
+      "description": "Analyse des spécialités médicales et paramédicales les plus difficiles à recruter en France, avec cartographie régionale.",
+      "image": "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=800&q=80",
+      "path": "/ressources/metiers-medicaux-tension"
+    },
+    {
+      "slug": "recruter-profil-medical",
+      "pole": "Médicale",
+      "type": "Guide",
+      "date": "Mars 2026",
+      "title": "Fiche pratique : recruter un médecin ou un paramédical",
+      "description": "Les étapes clés, les canaux efficaces et les erreurs à éviter pour réussir un recrutement médical.",
+      "image": "https://images.pexels.com/photos/7089401/pexels-photo-7089401.jpeg?auto=compress&cs=tinysrgb&w=800&q=80",
+      "path": "/ressources/recruter-profil-medical"
+    },
+    {
+      "slug": "sourcer-formateur-expert",
+      "pole": "Trainers",
+      "type": "Guide",
+      "date": "Mars 2026",
+      "title": "Comment sourcer un formateur expert pour votre organisme ?",
+      "description": "Méthodes, canaux et critères pour identifier et attirer les meilleurs formateurs indépendants ou salariés.",
+      "image": "https://images.pexels.com/photos/3184317/pexels-photo-3184317.jpeg?auto=compress&cs=tinysrgb&w=800&q=80",
+      "path": "/ressources/sourcer-formateur-expert"
+    },
+    {
+      "slug": "evaluer-formateur",
+      "pole": "Trainers",
+      "type": "Guide",
+      "date": "Février 2026",
+      "title": "Checklist : évaluer un formateur avant intégration",
+      "description": "Une checklist complète pour évaluer les compétences pédagogiques, techniques et relationnelles d'un formateur.",
+      "image": "https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=800&q=80",
+      "path": "/ressources/evaluer-formateur"
+    },
+    {
+      "slug": "guide-entretien-cabinet",
+      "pole": "Recrutements",
+      "type": "Guide",
+      "date": "Avril 2026",
+      "title": "Se préparer à un entretien avec un cabinet de recrutement",
+      "description": "Guide candidat : ce que les consultants attendent, comment présenter son parcours et maximiser ses chances.",
+      "image": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800&q=80",
+      "path": "/ressources/guide-entretien-cabinet"
+    },
+    {
+      "slug": "erreurs-recrutement",
+      "pole": "Recrutements",
+      "type": "Interview",
+      "date": "Janvier 2026",
+      "title": "Les erreurs de recrutement les plus coûteuses",
+      "description": "Interview de consultants NEXYTAL sur les erreurs récurrentes qui plombent les recrutements et comment les éviter.",
+      "image": "https://images.pexels.com/photos/7651579/pexels-photo-7651579.jpeg?auto=compress&cs=tinysrgb&w=800&q=80",
+      "path": "/ressources/erreurs-recrutement"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "coaching-dirigeants",
+  "pole": "Coaching",
+  "type": "Interview",
+  "date": "Mars 2026",
+  "title": "Coaching de dirigeants : quand et pourquoi ?",
+  "description": "Interview croisée de deux coaches certifiés NEXYTAL sur les situations qui déclenchent un accompagnement et les résultats observés.",
+  "image": "https://images.pexels.com/photos/5673488/pexels-photo-5673488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+  "intro": "Le coaching de dirigeants reste encore trop souvent mal compris. Perçu à tort comme un signe de faiblesse ou une mesure corrective, il est en réalité le privilège des leaders qui cherchent à franchir un palier. Deux coaches certifiés NEXYTAL partagent leur regard de terrain.",
+  "sections": [
+    {
+      "heading": "Qu'est-ce qui déclenche vraiment une demande de coaching ?",
+      "body": "Contrairement aux idées reçues, la majorité des demandes de coaching dirigeant ne viennent pas d'une situation de crise. Dans notre expérience, 5 situations sont récurrentes : une prise de poste dans un nouveau contexte culturel ou sectoriel, une transformation organisationnelle majeure (fusion, réorganisation, pivot stratégique), un sentiment de solitude face à des décisions complexes, une volonté de préparer une succession ou une transition, et enfin un besoin de recul face à une charge cognitive et émotionnelle trop lourde.",
+      "image": "https://images.pexels.com/photos/3760809/pexels-photo-3760809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "imageAlt": "Séance de coaching individuel en bureau",
+      "quote": {
+        "text": "Sur 10 dirigeants que j'accompagne, 7 viennent d'eux-mêmes, souvent recommandés par un pair. Le stigmate du coaching comme 'aveu d'échec' s'est largement dissipé dans les directions générales.",
+        "author": "Coach certifiée PCC-ICF, NEXYTAL Coaching"
+      }
+    },
+    {
+      "heading": "Ce que le coach fait — et ce qu'il ne fait pas",
+      "body": "Le coaching n'est pas du conseil : le coach ne donne pas de solution. Ce n'est pas du mentoring : il ne s'appuie pas sur son expérience sectorielle pour guider. Ce n'est pas de la thérapie : il travaille sur le présent et le futur professionnels, pas sur le passé personnel. Le coach pose des questions qui permettent au coaché de trouver ses propres réponses, de clarifier ses valeurs, ses priorités et ses modes de fonctionnement. C'est ce principe de responsabilisation qui rend les changements durables.",
+      "quote": {
+        "text": "Mon rôle est d'être le miroir le plus précis possible. Je ne juge pas, je ne prescris pas. Je crée un espace de réflexion que le dirigeant n'a nulle part ailleurs — ni avec ses équipes, ni avec son conseil d'administration.",
+        "author": "Coach certifié MCC-ICF, NEXYTAL Coaching"
+      }
+    },
+    {
+      "heading": "Comment se déroule un accompagnement type ?",
+      "body": "Un coaching de dirigeants dure généralement de 6 à 12 mois, à raison d'une séance mensuelle de 90 minutes. La première séance est consacrée à la définition d'objectifs clairs et mesurables — sans objectif formalisé, le coaching manque de cap. Les séances suivantes alternent exploration des situations professionnelles actuelles, travail sur les croyances limitantes et construction de nouvelles postures. Un bilan intermédiaire à 3 mois et un bilan final permettent de mesurer les progrès.",
+      "image": "https://images.pexels.com/photos/4427630/pexels-photo-4427630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "imageAlt": "Coach et dirigeant en session de travail"
+    },
+    {
+      "heading": "Les résultats observés sur le terrain",
+      "body": "Sur l'ensemble des accompagnements réalisés par NEXYTAL Coaching en 2025, 88 % des coachés déclarent avoir atteint au moins 80 % de leurs objectifs initiaux. Les bénéfices les plus fréquemment cités : meilleure qualité décisionnelle en situation d'incertitude (91 %), capacité accrue à déléguer (84 %), amélioration des relations avec les équipes (79 %), et réduction significative du stress perçu (73 %). Les entreprises clientes rapportent une amélioration de la cohésion des comités de direction dans 67 % des cas."
+    }
+  ],
+  "keyPoints": [
+    "5 situations déclenchantes : prise de poste, transformation, solitude, succession, surcharge",
+    "Le coaching n'est pas du conseil, ni du mentoring, ni de la thérapie",
+    "Durée type : 6 à 12 mois, 1 séance mensuelle de 90 minutes",
+    "88 % des coachés atteignent au moins 80 % de leurs objectifs",
+    "Bénéfice n°1 cité : meilleure qualité décisionnelle en situation d'incertitude",
+    "Recommandé par des pairs dans 70 % des cas — le bouche-à-oreille reste le premier canal"
+  ]
+}
