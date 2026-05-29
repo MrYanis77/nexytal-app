@@ -1,0 +1,51 @@
+{
+  "notreHistoire": {
+    "titre": "Notre histoire",
+    "contenu": [
+      "Nexytal est né de la volonté de démocratiser l'accès à des expertises de qualité dans les métiers du numérique, du management et des ressources humaines.",
+      "Face à un marché de l'emploi en constante évolution, nous avons identifié le besoin crucial d'accompagner les professionnels dans leur montée en compétences et leur évolution de carrière.",
+      "Aujourd'hui, nous sommes fiers d'avoir accompagné plus de 5 000 professionnels et de collaborer avec plus de 300 entreprises partenaires dans le développement de leurs talents.",
+      "Notre succès repose sur trois piliers : l'excellence de nos expertises, l'accompagnement personnalisé et l'adaptabilité aux besoins du marché.",
+      "Notre équipe de 20+ experts, tous issus du terrain, transmet non seulement des connaissances théoriques mais aussi leur expérience pratique du métier.",
+      "Cette approche pragmatique garantit à nos bénéficiaires une employabilité immédiate et une montée en compétences concrète."
+    ]
+  },
+  "nosValeurs": {
+    "titre": "Nos valeurs",
+    "items": [
+      {
+        "nom": "Excellence",
+        "description": "Nous visons l'excellence dans chaque aspect de notre activité : qualité des contenus, expertise de nos intervenants, accompagnement des professionnels."
+      },
+      {
+        "nom": "Bienveillance",
+        "description": "Chaque parcours est unique. Nous accompagnons nos bénéficiaires avec empathie et respect, en valorisant leurs forces et en les aidant à surmonter leurs difficultés."
+      },
+      {
+        "nom": "Innovation",
+        "description": "Nous innovons constamment pour proposer des méthodes modernes et adaptées aux nouveaux enjeux métiers et aux évolutions du marché."
+      }
+    ]
+  },
+  "certificationsAgrements": {
+    "titre": "Certifications & Agréments",
+    "items": [
+      {
+        "nom": "",
+        "description": "Certification qualité attestant de la rigueur de nos processus et de l'excellence de nos parcours d'expertise."
+      },
+      {
+        "nom": "Datadock",
+        "description": "Référencement permettant la prise en charge de nos parcours par les financeurs publics et mutualisés."
+      },
+      {
+        "nom": "CFA enregistré",
+        "description": "Centre habilité à délivrer des parcours en alternance et des titres professionnels reconnus (RNCP)."
+      },
+      {
+        "nom": "France Compétences",
+        "description": "Nos expertises certifiantes sont inscrites au Répertoire National des Certifications Professionnelles."
+      }
+    ]
+  }
+}
